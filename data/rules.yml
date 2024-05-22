@@ -1,0 +1,29 @@
+version: "3.1"
+
+rules:
+
+- rule: Say bye anytime the user says bye
+  steps:
+  - intent: bye
+  - action: utter_bye
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- rule: Provide information about rights when user asks
+  steps:
+  - intent: ask_about_rights
+  - action: action_provide_rights_details
+
+- rule: Prompt user to ask about rights
+  steps:
+  - action: utter_ask_about_rights
+
+- rule: Provide information about rights_details when user asks
+  steps:
+  - intent: rights_details
+  - action: action_provide_rights_details
+
+

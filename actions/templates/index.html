@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - www.codingnepalweb.com -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Women Safety and Security Bot</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0">
+    <style>
+        /* Reset CSS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f1f4fd;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        /* Header */
+        /* Header */
+        .header {
+            text-align: center;
+            padding: 60px 20px; /* Further reduced padding */
+            background: linear-gradient(135deg, #005a8d, #007b9d); /* Gradient background with blue tones */
+            color: #fff;
+
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Further reduced box shadow */
+        }
+        
+        .header h1 {
+            font-size: 42px; /* Further reduced font size */
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 0.5px; /* Further reduced letter spacing */
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Further reduced text shadow */
+        }
+        
+        /* About Section */
+        .about {
+            margin-bottom: 40px; /* Further reduced margin */
+            padding: 30px; /* Further reduced padding */
+            background-color: #f4f4f4; /* Light gray background for contrast */
+            border-radius: 15px; /* Further reduced border radius */
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Further reduced box shadow */
+            text-align: center; /* Center aligning content */
+        }
+        
+        .about h2 {
+            font-size: 32px; /* Further reduced font size */
+            margin-bottom: 20px; /* Further reduced margin */
+            color: #333; /* Dark gray text color for contrast */
+            text-transform: uppercase; /* Uppercase text for added emphasis */
+            font-weight: bold; /* Added bold font weight for emphasis */
+        }
+        
+        .about p {
+            font-size: 16px; /* Further reduced font size */
+            line-height: 1.5; /* Further adjusted line height */
+            color: #666; /* Dark gray text color for contrast */
+            margin-bottom: 15px; /* Further reduced margin bottom */
+        }
+        
+        /* Slider Section */
+        .slider-wrapper {
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 50px;
+        }
+        
+        .image-list {
+            display: flex;
+            overflow-x: auto;
+            scrollbar-width: none;
+            padding: 20px 0;
+        }
+        
+        .image-list::-webkit-scrollbar {
+            display: none;
+        }
+        
+        .image-list li {
+            flex: 0 0 auto;
+            margin-right: 20px;
+        }
+        
+        .image-list img {
+            width: 370px;
+            height: 450px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+        .features {
+            margin-bottom: 50px;
+        }
+        
+        .features h2 {
+            font-size: 36px;
+            margin-bottom: 30px;
+            color: #333;
+            text-align: center;
+        }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            color: #f9e8eb;
+            justify-items: center;
+        }
+        
+        .feature-card {
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            transition: transform 0.3s ease;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .feature-card i {
+            font-size: 48px;
+            margin-bottom: 20px;
+            color: #f9e8eb; /* Hot pink */
+        }
+        
+        .feature-card h3 {
+            font-size: 24px;
+            margin-bottom: 15px;
+            color: #333;
+        }
+        
+        .feature-card p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #666;
+        }
+        /* Contact section */
+        .contact {
+            text-align: center;
+            padding: 50px 0;
+        }
+        
+        .contact-container {
+            display: flex;
+            justify-content: center; /* Center the content horizontally */
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .feature-card {
+            padding: 30px; /* Padding for the feature card */
+            border-radius: 10px; /* Rounded corners for the feature card */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+        }
+        
+        .important-websites, .contact-info {
+            flex-basis: 50%; /* Each section occupies 50% of the container */
+            text-align: center; /* Align text to the left */
+        }
+        
+        .divider {
+            border-right: 1px solid #ccc; /* Vertical division line */
+            margin: 0 20px; /* Adjust the spacing */
+        }
+        
+        /* Styles for important websites and contact info */
+        .important-websites h3, .contact-info h2 {
+            margin-bottom: 20px;
+            color: #333; /* Darken the text color */
+            font-size: 34px;
+        }
+        
+        .important-websites ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .important-websites li {
+            margin-bottom: 10px;
+        }
+        
+        .important-websites img {
+            width: 100px; /* Adjust the width of the website logos */
+            padding-right: 10px;
+        }
+        
+        .contact-info div {
+            text-align: center; /* Align text to the left */
+        }
+        
+        /* Grid layout for website logos */
+        /* Grid layout for website logos */
+        .website-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* Three columns with equal width */
+            grid-auto-rows: auto; /* Automatically adjust row height */
+            gap: 20px; /* Gap between grid items */
+            justify-content: center; /* Center align items horizontally */
+            align-items: center; /* Center align items vertically */
+        }
+        
+        /* Forum Section */
+        .forum {
+            text-align: center;
+        }
+        
+        .forum h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        
+        /* Footer */
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px 0;
+            background-color: #333;
+            color: #fff;
+        }
+        
+        .footer p {
+            font-size: 14px;
+        }
+        .logo {
+            position: absolute; /* Position the logo absolute within the headline box */
+            top: 45px; /* Adjust the top position as needed */
+                    left: 100px; /* Adjust the left position as needed */
+                    width: 200px; /* Adjust the width as needed */
+                    border-radius: 100%;
+            width: 105px; /* Adjust the width of the logo as needed */
+        }
+        
+        
+        .chat-widget {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 350px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            background-color: #eef5f5; /* Change the background color here */
+            overflow: hidden;
+            display: none; /* Initially hide the chat widget */
+        }
+        .chat-header {
+            background-color: hsl(309, 27%, 56%);
+            color: #fff;
+            padding: 10px 20px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .chat-body {
+            padding: 10px 20px;
+            height: 250px;
+            overflow-y: auto;
+        }
+        .chat-footer {
+            background-color: #f8f9fa;
+            padding: 10px 20px;
+        }
+        .chat-input {
+            width: calc(100% - 40px);
+            border-radius: 20px;
+            padding: 10px 15px;
+            border: none;
+            outline: none;
+        }
+        .send-btn {
+            background-color: hsl(309, 27%, 56%);
+            color: #fff;
+            border: none;
+            border-radius: 20px;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .send-btn:hover {
+            background-color: hsl(309, 25%, 53%);
+        }
+            
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="https://morbiupdate.com/wp-content/uploads/2022/04/women-protection-black-glyph-icon-protect-girls-against-violence-female-empowerment-women-safety-gender-equality-provide-security-silhouette-symbol-on-white-space-isolated-illustration-vector.png" alt="Logo" class="logo">
+        <h1>Women Safety and Security Bot</h1>
+    </div>
+    
+    <div class="container">
+        <!-- About section -->
+        <section class="about">
+            <h2>About</h2>
+            <p>Our bot is designed to provide support, assistance, and resources to women facing safety concerns, whether it's in the workplace, during travel, or in public spaces.</p>
+        </section>
+        
+        <!-- Slider section -->
+        <div class="slider-wrapper">
+            <ul class="image-list">
+                <li><img src="https://i.pinimg.com/564x/15/e6/fd/15e6fdc7a31dffab03bb37fce2508dbb.jpg" alt="img-1"></li>
+                <li><img src="https://i.pinimg.com/564x/e3/13/40/e313405b8d5911a404ca6e8f2b582866.jpg" alt="img-5"></li>
+                <li><img src="https://i.pinimg.com/564x/33/68/86/3368864f77a3f8ef067fd63f533e19c6.jpg" alt="img-6"></li>
+                <li><img src="https://i.pinimg.com/564x/68/7a/63/687a63317e795291526056f0e110de2e.jpg" alt="img-7"></li>
+                <li><img src="https://i.pinimg.com/564x/52/12/cb/5212cb42e434efb2c648df95ab4df1b9.jpg" alt="img-8"></li>
+                <li><img src="https://i.pinimg.com/236x/41/09/31/4109310afd12f77ba2260343b8409272.jpg" alt="img-9"></li>
+                <li><img src="https://i.pinimg.com/564x/5b/23/16/5b2316ffb530536c56206cf231709147.jpg" alt="img-10"></li>
+            </ul>
+        </div>
+        
+        <!-- Features section -->
+        <section class="features">
+            <h2>Features</h2>
+            <div class="grid">
+                <div class="feature-card">
+                    <i class="fas fa-briefcase"></i>
+                    <h3>Women in Office Work</h3>
+                    <p>Empowering women in the workplace with safety measures and support.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-car"></i>
+                    <h3>Safe Travel</h3>
+                    <p>Ensuring women's safety during travel through real-time tracking and emergency alerts.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-laptop"></i>
+                    <h3>Cyber Abuse</h3>
+                    <p>Protecting women from cyber harassment and abuse with advanced security measures.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-comment-slash"></i>
+                    <h3>Eve Teasing</h3>
+                    <p>Combatting eve teasing and providing assistance to women facing harassment in public spaces.</p>
+                </div>
+            </div>
+        </section>
+        
+        
+<!-- Contact section -->
+<section id="contact" class="contact">
+    <div class="container">
+        <div class="feature-card">
+            <div class="contact-container">
+                <div class="important-websites">
+                    <h3>Important Websites</h3>
+                    <ul>
+                        <li><a href="https://reddotfoundation.in/index"><img src="https://reddotfoundation.in/assets/images/logo.png" alt="Website 1 Logo"></a></li>
+                        <li><a href="https://www.shethepeople.tv/"><img src=" https://img-cdn.thepublive.com/fit-in/580x326/filters:format(webp)/shethepeople/media/agency_attachments/iUYfaBbcMozaYLoGnoov.png" alt="Website 1 Logo"></a></li>
+                        <li><a href="https://vidhilegalpolicy.in/"><img src="https://vidhilegalpolicy.in/wp-content/uploads/2020/07/Vector.svg" alt="Website 1 Logo"></a></li>
+                        <li><a href="https://safetipin.com/"><img src="https://safetipin.com/wp-content/uploads/2023/08/safetipin-new-logo.jpg" alt="Website 1 Logo"></a></li>
+                        <li><a href="https://inbreakthrough.org/"><img src="https://inbreakthrough.org/wp-content/themes/breakthrough/dist/images/bt_new_logo.png" alt="Website 1 Logo"></a></li>
+                        <!-- Add more websites as needed -->
+                    </ul>
+                </div>
+                <div class="divider"></div> <!-- Division line -->
+                <div class="contact-info">
+                    <h2>Contact</h2>
+                    <p>Feel free to contact us for any inquiries or support:</p>
+                    <div>
+                        <p>Email: namitahans09@gmail.com</p>
+                        <p>Phone: +1234567890</p>
+                        <p>Address: Khandari,Agra</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<button id="chat-widget-button" type="button" class="btn btn-primary rounded-circle position-fixed chat-sign-button" style="bottom: 20px; right: 20px; width: 60px; height: 60px; background-color: #684f67; border: none; outline: none; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); transition: all 0.3s ease;">
+    <i class="fas fa-comment-alt" style="font-size: 24px; color: #ffffff; margin-top: 18px;"></i>
+</button>
+
+<div class="chat-widget">
+    <div class="chat-header">
+        <div>
+            StreeSahayak <br>
+             <span class="online-text">online</span>
+        </div>
+        <img src="https://pic.onlinewebfonts.com/thumbnails/icons_75936.svg" alt="Logo" width="30" height="30">
+    </div>
+    <div class="chat-body">
+        <!-- Chat messages will be appended here -->
+    </div>
+    
+    <div class="chat-footer">
+        <input type="text" class="chat-input" id="user-message" placeholder="Type your message...">
+        <button class="send-btn" id="send-message">Send</button>
+       
+    </div>
+    </div>
+
+  <footer class="footer">
+    <p>&copy; 2024 Women Safety and Security Bot. All rights reserved.</p>
+</footer>
+
+    <!-- JavaScript -->
+    <script>
+        $(document).ready(function() {
+            // Toggle visibility of the chat widget
+            $("#chat-widget-button").on("click", function() {
+                $(".chat-widget").toggle();
+        
+                // Toggle online status indicator
+                if ($(".chat-widget").is(":visible")) {
+                    $(".online-status").addClass("online");
+                } else {
+                    $(".online-status").removeClass("online");
+                }
+            });
+        
+            // Send message when Send button is clicked
+            $("#send-message").click(function() {
+                sendMessage();
+            });
+        
+            // Send message when Enter key is pressed
+            $("#user-message").keypress(function(event) {
+                if (event.which === 13) {
+                    sendMessage();
+                }
+            });
+        
+            // Function to send message
+            function sendMessage(message) {
+                var userMessage = message || $("#user-message").val().trim();
+                if (userMessage !== "") {
+                    appendMessage("You", userMessage);
+                    $("#user-message").val(""); // Clear input field
+        
+                    // Send user message to the server and get bot's response
+                    $.ajax({
+                        type: "POST",
+                        url: "/webhook",
+                        contentType: "application/json",
+                        data: JSON.stringify({ message: userMessage }),
+                        success: function(data) {
+                            var botResponse = data.response;
+                            appendMessage("Bot", botResponse);
+                        },
+                        error: function() {
+                            // Handle error if needed
+                        }
+                    });
+                }
+            }
+        
+            // Voice input button click event
+            $("#voice-input-button").on("click", function() {
+                startSpeechRecognition();
+            });
+        
+            // Function to start speech recognition
+            function startSpeechRecognition() {
+                var recognition = new webkitSpeechRecognition();
+                recognition.lang = 'en-US'; // Set language to English
+        
+                recognition.onresult = function(event) {
+                    var transcript = event.results[0][0].transcript;
+                    sendMessage(transcript); // Send transcribed text message
+                };
+        
+                recognition.start();
+            }
+        
+            // Function to append message to the chat body
+            function appendMessage(sender, message) {
+                $(".chat-body").append(`<div><strong>${sender}:</strong> ${message}</div>`);
+                // Scroll to bottom of chat body
+                $(".chat-body").scrollTop($(".chat-body")[0].scrollHeight);
+            }
+        });
+        const initSlider = () => {
+            const imageList = document.querySelector(".slider-wrapper .image-list");
+            const slideButtons = document.querySelectorAll(".slider-wrapper .slide-button");
+            const sliderScrollbar = document.querySelector(".container .slider-scrollbar");
+            const scrollbarThumb = sliderScrollbar.querySelector(".scrollbar-thumb");
+            const maxScrollLeft = imageList.scrollWidth - imageList.clientWidth;
+
+            // Handle scrollbar thumb drag
+            scrollbarThumb.addEventListener("mousedown", (e) => {
+                const startX = e.clientX;
+                const thumbPosition = scrollbarThumb.offsetLeft;
+                const maxThumbPosition = sliderScrollbar.getBoundingClientRect().width - scrollbarThumb.offsetWidth;
+
+                // Update thumb position on mouse move
+                const handleMouseMove = (e) => {
+                    const deltaX = e.clientX - startX;
+                    const newThumbPosition = thumbPosition + deltaX;
+
+                    // Ensure the scrollbar thumb stays within bounds
+                    const boundedPosition = Math.max(0, Math.min(maxThumbPosition, newThumbPosition));
+                    const scrollPosition = (boundedPosition / maxThumbPosition) * maxScrollLeft;
+
+                    scrollbarThumb.style.left = `${boundedPosition}px`;
+                    imageList.scrollLeft = scrollPosition;
+                }
+
+                // Remove event listeners on mouse up
+                const handleMouseUp = () => {
+                    document.removeEventListener("mousemove", handleMouseMove);
+                    document.removeEventListener("mouseup", handleMouseUp);
+                }
+
+                // Add event listeners for drag interaction
+                document.addEventListener("mousemove", handleMouseMove);
+                document.addEventListener("mouseup", handleMouseUp);
+            });
+
+            // Slide images according to the slide button clicks
+            slideButtons.forEach(button => {
+                button.addEventListener("click", () => {
+                    const direction = button.id === "prev-slide" ? -1 : 1;
+                    const scrollAmount = imageList.clientWidth * direction;
+                    imageList.scrollBy({ left: scrollAmount, behavior: "smooth" });
+                });
+            });
+
+            // Show or hide slide buttons based on scroll position
+            const handleSlideButtons = () => {
+                slideButtons[0].style.display = imageList.scrollLeft <= 0 ? "none" : "flex";
+                slideButtons[1].style.display = imageList.scrollLeft >= maxScrollLeft ? "none" : "flex";
+            }
+
+            // Update scrollbar thumb position based on image scroll
+            const updateScrollThumbPosition = () => {
+                const scrollPosition = imageList.scrollLeft;
+                const thumbPosition = (scrollPosition / maxScrollLeft) * (sliderScrollbar.clientWidth - scrollbarThumb.offsetWidth);
+                scrollbarThumb.style.left = `${thumbPosition}px`;
+            }
+
+            // Call these two functions when image list scrolls
+            imageList.addEventListener("scroll", () => {
+                updateScrollThumbPosition();
+                handleSlideButtons();
+            });
+        }
+
+        window.addEventListener("resize", initSlider);
+        window.addEventListener("load", initSlider);
+    </script>
+</body>
+</html>

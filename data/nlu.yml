@@ -1,0 +1,451 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hi
+    - hello
+    - hey
+    - hi there
+    - hello there
+    - hey there
+
+- intent: ask_about_rights
+  examples: |
+    - What are my rights?
+    - Can you tell me about my rights?
+    - I want to know my rights
+    - What rights do I have?
+    - Explain my rights to me
+    - How can you help with my rights?
+    - Rights information please
+
+- intent: ask_direct_to_links
+  examples: |
+    - Can you provide me with some helpful links?
+    - I need some links for more information
+    - Do you have any useful links?
+    - Links please
+    - Send me some links
+
+- intent: bye
+  examples: |
+    - bye
+    - see you later
+    - farewell
+    - bye bye
+    - take care
+    - have a good one
+
+- intent: provide_safety_apps_for_women_india
+  examples: |
+    - Can you recommend safety apps for women in India?
+    - I need some safety apps for women in India
+    - What are the safety apps available for women in India?
+    - Tell me about safety apps for women's security in India
+    - Which apps can help ensure women's safety in India?
+    - Recommend me some safety apps for women in India
+    - Are there any safety apps specifically for women in India?
+    - I want to know about safety apps tailored for women in India
+    - Can you list some safety apps designed for women's safety in India?
+    - Provide information about safety apps for women in India
+
+- intent: bot_challenge
+  examples: |
+   - Are you a bot?
+   - Is this automated?
+   - Am I talking to a human?
+   - Can you prove you're not a robot?
+
+- intent: rights_details
+  examples: |
+    - tell me about women's rights in India
+    - what rights do women have in India
+    - can you provide details about women's rights
+    - I want to learn about the rights of women in India
+    - What are the rights entitled to women in India?
+    - Explain the legal rights of women in India
+    - Could you elaborate on the rights Indian women possess?
+    - Please provide information on the rights of women in India
+    - I'm interested in knowing more about the rights of women in India
+    - What legal protections are available for women in India?
+    - Can you list out the rights guaranteed to women in India?
+    - What are the fundamental rights of women in India?
+    - I'd like to understand the rights that women have under Indian law
+    - Tell me about the legal provisions ensuring women's rights in India
+    - I'm curious about the rights that Indian women are entitled to
+    - Could you outline the rights granted to women according to Indian legislation?
+    - What are the rights that Indian women are ensured by law?
+    - Explain the rights afforded to women by the Indian legal system
+    - Can you detail the rights of women as per Indian laws?
+
+- intent: ask_about_ola_safety_features
+  examples: |
+    - What are the safety features in Ola?
+    - Explain Ola's safety features
+    - Ola safety functionalities
+    - Features ensuring safety in Ola
+
+- intent: ask_about_ola_safety_measures_female_passengers
+  examples: |
+    - How does Ola ensure safety for female passengers?
+    - What safety measures does Ola have for women?
+    - Safety for female passengers in Ola
+    - Ola's measures for women's safety
+    - How does Ola prioritize safety for women riders?
+    - Can you tell me about Ola's safety initiatives specifically aimed at female passengers?
+    - What steps has Ola taken to ensure the safety of its female customers?
+    - How does Ola address safety concerns unique to female passengers?
+    - What precautions does Ola implement to make female riders feel secure during their trips?
+    - Could you provide details about Ola's safety protocols for women traveling alone?
+
+- intent: mobile_recharge
+  examples: |
+    - I want to recharge my mobile
+    - How can I recharge my phone?
+    - Any tips for mobile recharge?
+    - How to avoid misuse while recharging my phone?
+    - What precautions should I take for mobile recharge?
+    - Can I recharge online?
+    - Is it safe to recharge through local vendors?
+    - How to purchase sim cards safely?
+    - Any tips for secure mobile recharge?
+    - Should I use online recharge or local vendors?
+    - How to recharge without giving my mobile number?
+
+- intent: cyber_stalking_precautions
+  examples: |
+    - What steps can I take to protect myself from cyber stalking?
+    - Can you provide some advice on avoiding cyber stalking?
+    - I'm concerned about cyber stalking. How can I stay safe online?
+    - Are there any specific precautions I should be aware of regarding cyber stalking?
+    - I want to learn more about preventing cyber stalking. Any recommendations?
+    - How do I safeguard my online privacy to avoid cyber stalking?
+    - What are some best practices for preventing cyber stalking?
+    - Are there any warning signs of potential cyber stalking that I should be aware of?
+    - Can you share some strategies for minimizing the risk of cyber stalking?
+    - I'm worried about my online safety. What should I do to prevent cyber stalking?
+
+- intent: laws_related_to_cyberstalking
+  examples: |
+    - What are the laws related to cyberstalking in India?
+    - Can you explain the legal provisions for cyberstalking under the IT Act?
+    - What sections of the IT Act deal with cyberstalking offenses?
+    - I want to know about the legal consequences of cyberstalking in India.
+    - How is cyberstalking punished under the IT Act?
+    - Can you provide information about cyberstalking laws in India?
+    - What penalties can cyberstalkers face under the IT Act?
+    - Are there specific regulations for cyberstalking in Indian law?
+    - I'm curious about the legal framework for cyberstalking in India.
+    - Can you outline the IT Act sections pertaining to cyberstalking?
+- intent: file_complaint_with_police
+  examples: |
+    - How can I file a complaint for cyberstalking with the police?
+    - What steps should I take to report cyberstalking to the Cyber Cell?
+    - Can I file a complaint online for cyberstalking?
+    - Where should I go to report a cyberstalking incident to the authorities?
+    - Is there a specific form for reporting cyberstalking to the police?
+    - How do I initiate legal action against a cyberstalker in India?
+    - What information do I need to provide when filing a cyberstalking complaint?
+    - Can I report cyberstalking anonymously to the police?
+    - Do I need to visit the police station to report cyberstalking, or can I do it online?
+    - Are there any specific documents required when reporting cyberstalking?
+- intent: keep_evidence
+  examples: |
+    - What evidence should I keep if I'm a victim of cyberstalking?
+    - How important is it to preserve evidence for a cyberstalking complaint?
+    - What kind of evidence is necessary to support a cyberstalking complaint?
+    - Should I save emails, messages, and social media posts as evidence of cyberstalking?
+    - Is recording phone calls a valid form of evidence for cyberstalking?
+    - Can witness testimonies be used as evidence in a cyberstalking case?
+    - How long should I keep evidence of cyberstalking incidents?
+    - Are screenshots sufficient evidence for proving cyberstalking?
+    - What should I do if I lose evidence of cyberstalking?
+    - Is it necessary to authenticate evidence before submitting it to the authorities?
+- intent: contact_NCW
+  examples: |
+    - How can I contact the National Commission for Women (NCW) regarding cyberstalking?
+    - Is the NCW a reliable authority to report cyberstalking incidents?
+    - Can the NCW help me with legal action against cyberstalking?
+    - What support services does the NCW offer for victims of cyberstalking?
+    - Does the NCW provide assistance in filing complaints for cyberstalking?
+    - Are there any helplines provided by the NCW for cyberstalking victims?
+    - Can I reach out to the NCW for counseling and guidance on cyberstalking?
+    - How quickly does the NCW respond to complaints of cyberstalking?
+    - Are there any online platforms where I can connect with the NCW for cyberstalking assistance?
+    - Does the NCW provide legal representation for cyberstalking cases?
+- intent: report_to_cybercrime_portal
+  examples: |
+    - How do I report a cyberstalking incident to the National Cybercrime Reporting Portal?
+    - Is it effective to report cyberstalking to the Cybercrime Portal?
+    - Can I report cyberstalking anonymously through the Cybercrime Portal?
+    - What information do I need to provide when reporting cyberstalking online?
+    - Are there any specific steps to follow when reporting cyberstalking to the Cybercrime Portal?
+    - How long does it take for the Cybercrime Portal to respond to complaints?
+    - Can I track the progress of my cyberstalking complaint on the Cybercrime Portal?
+    - Is there a dedicated helpline number for reporting cyberstalking to the Cybercrime Portal?
+    - Are complaints submitted through the Cybercrime Portal confidential?
+    - Can I report cyberstalking incidents occurring on social media platforms to the Cybercrime Portal?
+
+- intent: cyberstalking_punishment_section_67
+  examples: |
+    - What is the punishment for cyberstalking under Section 67 of the IT Act?
+    - Can you explain the consequences of cyberstalking as per Section 67 of the Information Technology Act?
+    - What penalties are imposed for cyberstalking under Section 67 of the IT Act?
+    - How does Section 67 of the Information Technology Act punish cyberstalkers?
+    - What is the imprisonment term for cyberstalking under Section 67 of the IT Act?
+    - Explain the provisions of Section 67 of the IT Act regarding cyberstalking punishment.
+    - What constitutes cyberstalking punishment according to Section 67 of the Information Technology Act?
+    - Can you provide details about the fine imposed under Section 67 of the IT Act for cyberstalking?
+    - How does Section 67 of the IT Act address cyberstalking offenses?
+    - What actions are punishable under Section 67 of the Information Technology Act?
+
+- intent: cyberstalking_punishment_section_67A
+  examples: |
+    - What are the penalties for cyberstalking under Section 67A of the IT Act?
+    - Can you explain the punishment for cyberstalking as per Section 67A of the Information Technology Act?
+    - How does Section 67A of the IT Act punish cyberstalkers?
+    - What is the imprisonment term for cyberstalking under Section 67A of the Information Technology Act?
+    - Explain the provisions of Section 67A of the IT Act regarding cyberstalking punishment.
+    - What constitutes cyberstalking punishment according to Section 67A of the Information Technology Act?
+    - Can you provide details about the fine imposed under Section 67A of the IT Act for cyberstalking?
+    - How does Section 67A of the Information Technology Act address cyberstalking offenses?
+    - What actions are punishable under Section 67A of the IT Act?
+    - What are the consequences of cyberstalking under Section 67A of the Information Technology Act?
+
+- intent: ipc_section_379
+  examples: |
+    - Theft of a laptop from my office
+    - Someone stole my mobile phone on the bus
+    - My computer was stolen from my home
+    - Theft of data from the company server
+    - My car stereo was stolen last night
+    - Someone stole my wallet containing my ID and credit cards
+    - Theft of jewelry from my house
+    - My bicycle was stolen from the garage
+    - Someone stole my backpack with all my belongings
+    - Theft of cash from my wallet
+
+- intent: ipc_section_411
+  examples: |
+    - I found my stolen laptop in a pawn shop
+    - My stolen mobile phone was recovered by the police
+    - The thief was found with my stolen data
+    - My stolen computer was traced back to the thief
+    - The stolen jewelry was recovered from the suspect
+    - I caught someone with my stolen backpack
+    - My stolen car stereo was recovered by the authorities
+    - The thief was apprehended with my stolen bicycle
+    - I found my stolen wallet in the bushes
+    - The stolen cash was recovered from the perpetrator
+
+- intent: ipc_section_419
+  examples: |
+    - I received a phishing email asking for my bank details
+    - Someone tried to scam me with a bogus website
+    - I got an email claiming I won a lottery I never entered
+    - I received an email asking for my login credentials
+    - I got a suspicious email asking for personal information
+    - Someone sent me an email offering a job that sounded too good to be true
+    - I received an email claiming to be from a bank asking for my password
+    - Someone tried to trick me into sharing my social security number via email
+    - I received an email offering discounted products that seemed fraudulent
+    - I got an email with a link that looked like a phishing attempt
+
+- intent: ipc_section_420
+  examples: |
+    - Someone sent defamatory messages about me via email
+    - I received an email containing false information about a colleague
+    - Someone spoofed my email address and sent malicious emails
+    - I received an email scam promising quick money
+    - Someone sent offensive emails to our company's mailing list
+    - I got an email with fake documents attached
+    - Someone used my email account to send spam
+    - I received threatening emails from an anonymous sender
+    - Someone sent fraudulent invoices to our clients from my email
+    - I received an email with links to a phishing website
+
+- intent: ipc_section_465
+  examples: |
+    - I discovered a fake ID in my name
+    - Someone forged my signature on a contract
+    - I found a fake document claiming I owed money
+    - Someone altered a document to change the terms
+    - I received a fake passport in the mail
+    - Someone created a fake diploma in my name
+    - I found a fake certificate of authenticity for a product I bought
+    - Someone falsified my medical records
+    - I discovered a forged signature on a check
+    - Someone created a fake receipt for a purchase I never made
+
+- intent: ipc_section_468
+  examples: |
+    - Someone sent spoofed emails pretending to be me
+    - I received an email with a fake digital signature
+    - Someone created a fake online profile using my name
+    - I found a fake document with my electronic signature
+    - Someone used my digital signature to sign a contract without my consent
+    - I received an email claiming to be from a trusted source but it was fake
+    - Someone falsified documents with a digital signature
+    - I discovered a forged digital signature on a legal document
+    - Someone created a fake website with my digital signature
+    - I received an email with a fake company logo and signature
+
+- intent: ipc_section_500
+  examples: |
+    - I received offensive messages on social media
+    - Someone sent me threatening text messages
+    - I got harassing phone calls from an unknown number
+    - Someone insulted me in a chat room
+    - I received hate speech in an online forum
+    - Someone spread rumors about me on a messaging app
+    - I received abusive comments on my blog
+    - Someone posted defamatory content about me on a website
+    - I got vulgar messages from an anonymous sender
+    - Someone sent me offensive images via email
+
+- intent: ipc_section_504
+  examples: |
+    - Someone made inappropriate gestures towards me in public
+    - I was verbally harassed by a stranger on the street
+    - A coworker made derogatory remarks about my appearance
+    - I received unsolicited comments about my body from a passerby
+    - Someone made offensive remarks about my gender at work
+    - I was catcalled while walking home alone
+    - A group of people made lewd gestures towards me at a party
+    - A stranger made obscene comments about me on social media
+    - Someone made sexual advances towards me without consent
+    - I was subjected to inappropriate behavior at a social event
+
+- intent: ipc_section_506
+  examples: |
+    - I received death threats via email
+    - Someone threatened to harm me if I didn't comply with their demands
+    - A stranger threatened me with physical violence
+    - Someone sent me a threatening letter in the mail
+    - I was blackmailed by an anonymous person
+    - A coworker made intimidating remarks towards me
+    - Someone threatened to damage my property if I didn't do what they wanted
+    - I received threatening messages on social media
+    - A stranger followed me and made menacing gestures
+    - Someone threatened to expose personal information about me
+
+- intent: ipc_section_507
+  examples: |
+    - I received anonymous threats via email
+    - Someone sent me intimidating messages without revealing their identity
+    - A stranger made menacing phone calls to my house
+    - I received threatening letters from an unknown sender
+    - Someone vandalized my property and left a threatening note
+    - I found a threatening message written on my car window
+    - A coworker left anonymous threats on my desk
+    - I received menacing messages on social media from a fake account
+    - Someone sent me intimidating emails under a pseudonym
+    - I received anonymous threats in the mail
+
+- intent: ipc_section_508
+  examples: |
+    - Someone used my copyrighted material without permission
+    - I discovered my artwork being sold without authorization
+    - A company used my photographs without crediting me
+    - Someone plagiarized my written work and published it online
+    - I found my music being distributed illegally on the internet
+    - A website posted my videos without obtaining proper licenses
+    - Someone copied my designs and sold them as their own
+    - I discovered my logo being used by another business
+    - A book publisher printed my manuscript without my consent
+    - Someone uploaded my software code to a public repository without permission
+
+- intent: report_cyber_crime
+  examples: |
+    - Report all your cyber-crimes to your local police station that has the jurisdiction over your residence or your office premises, as the case maybe.
+    - Where should I report cyber-crimes?
+    - How can I report cyber-crimes?
+    - What is the procedure to report cyber-crimes?
+    - Can you help me with reporting a cyber-crime?
+    - I need to report a cyber-crime. What should I do?
+    - How do I file a complaint for cyber-crime?
+    - Who do I contact to report cyber-crimes?
+    - Where can I find information on reporting cyber-crimes?
+    - How do I register a complaint for cyber-crime?
+    - Where can I register complaints of cyber-crimes?
+
+
+- intent: posh_act_explanation
+  examples: |
+    - Explain the POSH Act in simple terms.
+    - What is the Sexual Harassment of Women at Workplace Act about?
+    - Can you give me a brief overview of the POSH Act?
+    - Describe the key features of the POSH Act.
+    - I'm not familiar with the POSH Act. Can you provide an explanation?
+    - What are the main provisions of the Sexual Harassment of Women at Workplace Act?
+    - Tell me more about the legislation known as the POSH Act.
+    - I've heard about the POSH Act. Can you tell me what it entails?
+    - Can you summarize the Sexual Harassment of Women at Workplace (Prevention, Prohibition and Redressal) Act?
+    - Explain the purpose and scope of the POSH Act.
+
+- intent: posh_act_compliance
+  examples: |
+    - How can companies ensure compliance with the POSH Act?
+    - What steps should organizations take to comply with the Sexual Harassment of Women at Workplace Act?
+    - Explain the process for ensuring adherence to the POSH Act.
+    - Can you provide guidelines for complying with the POSH Act?
+    - What measures should employers implement to meet the requirements of the POSH Act?
+    - How do businesses demonstrate compliance with the Sexual Harassment of Women at Workplace Act?
+    - Provide information on how companies can follow the provisions of the POSH Act.
+    - Describe the actions that organizations need to take to fulfill their obligations under the POSH Act.
+    - What are the best practices for companies to be in accordance with the POSH Act?
+    - Can you outline the compliance framework for the Sexual Harassment of Women at Workplace Act?
+
+- intent: posh_act_reporting
+  examples: |
+    - What steps should I take if I want to report sexual harassment under the POSH Act?
+    - How do I lodge a complaint under the Sexual Harassment of Women at Workplace Act?
+    - Provide guidance on filing a sexual harassment complaint as per the POSH Act.
+    - Explain the procedure for reporting workplace harassment under the POSH Act.
+    - Who should I contact if I need to report a case of sexual harassment under the POSH Act?
+    - Can you walk me through the process of registering a complaint under the Sexual Harassment of Women at Workplace Act?
+    - Describe the steps involved in reporting sexual harassment at the workplace under the POSH Act.
+    - What documentation is required when reporting a sexual harassment incident under the POSH Act?
+    - How do I initiate a formal complaint under the provisions of the POSH Act?
+    - What recourse do I have if I experience sexual harassment at work?
+
+- intent: posh_act_penalties
+  examples: |
+    - What are the consequences of violating the POSH Act?
+    - Can you explain the penalties for non-compliance with the Sexual Harassment of Women at Workplace Act?
+    - Describe the repercussions of breaching the provisions of the POSH Act.
+    - What sanctions can be imposed for failing to adhere to the POSH Act?
+    - How severe are the punishments for companies that do not follow the Sexual Harassment of Women at Workplace Act?
+    - Provide information on the legal penalties associated with violating the POSH Act.
+    - What actions can authorities take against organizations that disregard the provisions of the POSH Act?
+    - Explain the fines and punishments for companies found guilty of violating the Sexual Harassment of Women at Workplace Act.
+    - What legal liabilities do employers face for non-compliance with the POSH Act?
+    - Describe the legal consequences of contravening the provisions of the POSH Act.
+
+- intent: posh_act_icc
+  examples: |
+    - What is the role of the Internal Complaints Committee (ICC) under the POSH Act?
+    - Can you explain the functions of the ICC mandated by the Sexual Harassment of Women at Workplace Act?
+    - Describe the composition and responsibilities of the Internal Complaints Committee established under the POSH Act.
+    - What powers does the Internal Complaints Committee have under the POSH Act?
+    - Explain the authority and duties of the ICC in handling sexual harassment complaints under the POSH Act.
+    - Provide information on the role of the Internal Complaints Committee in addressing workplace harassment as per the POSH Act.
+    - How does the Internal Complaints Committee function in accordance with the Sexual Harassment of Women at Workplace Act?
+    - Describe the process followed by the ICC for redressing complaints under the POSH Act.
+    - What procedures does the Internal Complaints Committee follow when investigating sexual harassment cases under the POSH Act?
+    - Can you outline the responsibilities of employers in setting up and operating the Internal Complaints Committee as per the POSH Act?
+
+- intent: ask_safety_numbers
+  examples: |
+    - Can you provide safety numbers?
+    - What are the emergency contact numbers?
+    - I need help, can you give me some contact numbers?
+    - helpline numbers
+
+- intent: report_cyberstalking
+  examples: |
+    - I'm being cyberstalked online
+    - Someone is harassing me on social media
+    - I need help with a cyberstalking issue
+    - Can you assist with online harassment?

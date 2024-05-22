@@ -1,0 +1,437 @@
+version: "3.1"
+
+intents:
+- greet
+- ask_about_rights
+- ask_direct_to_links
+- bye
+- ask_safety_numbers
+- provide_safety_apps_for_women_india
+- bot_challenge
+- rights_details
+- ask_about_ola_safety_features
+- ask_about_ola_safety_measures_female_passengers
+- mobile_recharge
+- cyber_stalking_precautions
+- laws_related_to_cyberstalking
+- file_complaint_with_police
+- keep_evidence
+- contact_NCW
+- report_to_cybercrime_portal
+- cyberstalking_punishment_section_67
+- cyberstalking_punishment_section_67A
+- ipc_section_379
+- ipc_section_411
+- ipc_section_419
+- ipc_section_420
+- ipc_section_465
+- ipc_section_468
+- ipc_section_500
+- ipc_section_504
+- ipc_section_506
+- ipc_section_507
+- ipc_section_508
+- report_cyber_crime
+- posh_act_explanation
+- posh_act_compliance
+- posh_act_reporting
+- posh_act_penalties
+- posh_act_icc
+- report_cyberstalking
+
+responses:
+
+  utter_greet:
+    - text: "Hello! Welcome to StreeSahayak Chatbot. How can I assist you today?"
+
+  utter_bye:
+    - text: "Goodbye! Remember, you can always return if you have more questions."
+
+ 
+  utter_ask_about_rights:
+    - text: "Women in India are entitled to various rights, including the right to equality, freedom from discrimination, and protection against violence. Would you like more details?"
+    - text: "In India, women have numerous rights, such as the right to equality, freedom from discrimination, and protection against violence. Would you like to know more about these rights?"
+    - text: "Indian women possess several rights, including the right to equality, freedom from discrimination, and protection against violence. Would you like additional information on this topic?"
+    - text: "The rights of women in India include equality, freedom from discrimination, and protection against violence. Would you like to delve deeper into this subject?"
+    - text: "In India, women are guaranteed various rights, including equality, freedom from discrimination, and protection against violence. Would you like to explore these rights further?"
+    - text: "Women in India have rights such as equality, freedom from discrimination, and protection against violence. Would you like more details about these rights?"
+    - text: "Indian women have the right to equality, freedom from discrimination, and protection against violence. Would you like me to provide more information about these rights?"
+    - text: "In India, women enjoy rights like equality, freedom from discrimination, and protection against violence. Would you like to learn more about these rights?"
+    - text: "The rights of women in India encompass equality, freedom from discrimination, and protection against violence. Would you like further elaboration on this topic?"
+    - text: "Women in India possess rights including equality, freedom from discrimination, and protection against violence. Would you like additional information regarding these rights?"
+
+
+  utter_iamabot:
+    - text: "I am a bot designed to assist you with information about Indian women's rights."
+
+
+  utter_ola_safety_features:
+    - text: "Ola offers various safety features to ensure the security of its passengers. These include real-time ride tracking, an SOS button for emergencies, in-app driver identification, and driver ratings and reviews."
+    - text: "Ensuring passenger safety is a top priority for Ola, which is why they offer a range of safety features. These include real-time ride tracking, an SOS button for emergencies, in-app driver identification, and driver ratings and reviews."
+    - text: "Ola prioritizes passenger safety by providing several safety features. These include real-time ride tracking, an SOS button for emergencies, in-app driver identification, and driver ratings and reviews."
+    - text: "Safety is paramount at Ola, and they ensure it through various features including real-time ride tracking, an SOS button for emergencies, in-app driver identification, and driver ratings and reviews."
+    - text: "Ola understands the importance of passenger safety, which is why they offer numerous safety features. These include real-time ride tracking, an SOS button for emergencies, in-app driver identification, and driver ratings and reviews."
+    - text: "Passenger safety is a top concern for Ola, and they provide several safety features to address it. These include real-time ride tracking, an SOS button for emergencies, in-app driver identification, and driver ratings and reviews."
+    - text: "At Ola, safety is non-negotiable, and they provide multiple safety features to ensure passenger security. These include real-time ride tracking, an SOS button for emergencies, in-app driver identification, and driver ratings and reviews."
+    - text: "Ola is committed to passenger safety and offers several safety features to guarantee it. These include real-time ride tracking, an SOS button for emergencies, in-app driver identification, and driver ratings and reviews."
+    - text: "Passenger safety is of utmost importance to Ola, and they provide various safety features to uphold it. These include real-time ride tracking, an SOS button for emergencies, in-app driver identification, and driver ratings and reviews."
+    - text: "Ola takes passenger safety seriously and offers multiple safety features to ensure it. These include real-time ride tracking, an SOS button for emergencies, in-app driver identification, and driver ratings and reviews."
+
+
+  utter_ola_safety_measures_female_passengers:
+    - text: "Ola prioritizes the safety of female passengers with features such as female driver preferences, 24/7 customer support, and SOS buttons for emergency situations."
+    - text: "Ola prioritizes the safety of female passengers by offering a range of features designed to enhance security during their rides. These include female driver preferences, allowing female passengers to request female drivers if they prefer. Additionally, Ola provides 24/7 customer support to address any concerns or emergencies that may arise. For added safety, Ola also integrates SOS buttons in its app, enabling passengers to quickly seek assistance in case of emergencies."
+    - text: "Ensuring the safety of female passengers is a top priority for Ola. To achieve this, Ola offers features such as female driver preferences, allowing passengers to choose female drivers if they wish. Moreover, Ola provides round-the-clock customer support to address any safety concerns promptly. Additionally, Ola's app includes SOS buttons for emergency situations, providing passengers with peace of mind during their rides."
+    - text: "Ola is committed to ensuring the safety of female passengers throughout their journey. To achieve this, Ola offers features such as female driver preferences, enabling passengers to select female drivers if they prefer. Additionally, Ola provides 24/7 customer support to assist passengers with any safety-related issues. Furthermore, Ola's app includes SOS buttons for emergency situations, ensuring that help is readily available when needed."
+    - text: "Safety is paramount for female passengers traveling with Ola. To enhance their security, Ola offers features such as female driver preferences, allowing passengers to opt for female drivers if they prefer. Additionally, Ola provides round-the-clock customer support to address any safety concerns promptly. Moreover, Ola's app includes SOS buttons for emergency situations, ensuring quick assistance during critical moments."
+    - text: "Ola places a strong emphasis on the safety of female passengers. To ensure their security, Ola offers features such as female driver preferences, enabling passengers to choose female drivers if they wish. Additionally, Ola provides 24/7 customer support to address any safety-related concerns. Moreover, Ola's app includes SOS buttons for emergency situations, providing passengers with immediate assistance when needed."
+    - text: "At Ola, the safety of female passengers is of utmost importance. To enhance their security, Ola offers features such as female driver preferences, allowing passengers to request female drivers if they prefer. Additionally, Ola provides round-the-clock customer support to address any safety concerns promptly. Furthermore, Ola's app includes SOS buttons for emergency situations, ensuring that help is just a tap away."
+    - text: "Ola is dedicated to ensuring the safety of female passengers during their rides. To achieve this, Ola offers features such as female driver preferences, enabling passengers to select female drivers if they wish. Additionally, Ola provides 24/7 customer support to assist passengers with any safety-related issues. Moreover, Ola's app includes SOS buttons for emergency situations, ensuring timely assistance when needed."
+    - text: "Ensuring the safety and security of female passengers is a top priority for Ola. To achieve this, Ola offers features such as female driver preferences, allowing passengers to choose female drivers if they prefer. Additionally, Ola provides round-the-clock customer support to address any safety concerns promptly. Furthermore, Ola's app includes SOS buttons for emergency situations, ensuring passengers feel safe throughout their journey."
+    - text: "Safety is a fundamental aspect of Ola's service, especially for female passengers. To enhance their security, Ola offers features such as female driver preferences, enabling passengers to request female drivers if they prefer. Additionally, Ola provides 24/7 customer support to address any safety-related concerns. Furthermore, Ola's app includes SOS buttons for emergency situations, ensuring prompt assistance when needed."
+    - text: "Ola understands the importance of ensuring the safety of female passengers. To achieve this, Ola offers features such as female driver preferences, allowing passengers to opt for female drivers if they wish. Additionally, Ola provides round-the-clock customer support to assist passengers with any safety-related issues. Moreover, Ola's app includes SOS buttons for emergency situations, providing passengers with peace of mind during their rides."
+
+
+  utter_mobile_recharge_precautions:
+    - text: "While recharging your mobile prepaid card account, it's important to take precautions to avoid misuse. Ideally, go to the Customer Care Centre of the Mobile Service Provider to get the recharge done. If you choose a local vendor, there's a risk of giving your mobile number. You can also recharge online or through the Customer Care Centre. Purchasing sim cards from local vendors may pose risks of ID proof duplication. If you know the local vendor well, using credit for recharge may seem convenient, but it can cost you more in the long run."
+    - text: "For safe mobile recharge, consider using online platforms or the Customer Care Centre of your Mobile Service Provider. Giving your mobile number to local vendors may lead to misuse. Additionally, be cautious when purchasing sim cards from local vendors as your ID proofs could be duplicated and misused. Avoid using credit for recharge unless you fully trust the local vendor."
+    - text: "To ensure your safety while recharging your mobile, it's recommended to use reliable methods such as online recharge or visiting the Customer Care Centre. Providing your mobile number to local vendors can put your information at risk. Be wary of purchasing sim cards from local vendors as it may lead to identity theft. Using credit for recharge from local vendors may seem convenient, but it's safer to avoid it to prevent potential fraud."
+    - text: "When recharging your mobile, prioritize safety by opting for online recharge or visiting the Customer Care Centre. Avoid giving your mobile number to local vendors to prevent misuse. Additionally, exercise caution when purchasing sim cards from local vendors to protect your personal information. While it may be tempting to use credit for recharge, be mindful of the risks associated with it."
+    - text: "To safeguard yourself during mobile recharge, choose secure methods such as online recharge or visiting the Customer Care Centre. Sharing your mobile number with local vendors can expose you to risks. Take precautions when buying sim cards from local vendors to avoid identity theft. While using credit for recharge may offer convenience, it's advisable to use safer alternatives."
+
+  utter_cyber_stalking_precautions:
+    - text: "Protecting yourself from cyber stalking involves being mindful of your online activities and taking proactive steps to safeguard your privacy. Avoid accepting friend requests or messages from unknown individuals on social media platforms, as they could be potential cyber stalkers trying to gain access to your personal information. Additionally, regularly review your privacy settings on social media accounts and adjust them to limit who can view your posts and personal details."
+    - text: "To minimize the risk of cyber stalking, it's essential to regularly update your passwords and use strong, unique passwords for each of your online accounts. Consider enabling two-factor authentication for an extra layer of security. Be cautious when clicking on links or downloading attachments from unknown sources, as they could contain malware used by cyber stalkers to gain access to your devices and personal information."
+    - text: "Cyber stalking often starts with seemingly harmless actions, such as sending unsolicited messages or tracking your online activity. Be vigilant for any signs of cyber stalking, such as receiving excessive emails, texts, or social media notifications from someone you don't know or trust. Trust your instincts and report any suspicious behavior to the appropriate authorities or online platforms. Remember, your safety and privacy are paramount, and it's okay to seek help if you feel threatened or harassed."
+    - text: "In addition to protecting your online accounts and personal devices, consider using privacy-focused tools and software to further enhance your online security. For example, you can use virtual private networks (VPNs) to encrypt your internet connection and mask your IP address, making it more difficult for cyber stalkers to track your online activities. Stay informed about the latest cyber security threats and trends, and educate yourself on best practices for staying safe online."
+    - text: "If you believe you are being cyber stalked, it's important to take immediate action to protect yourself and seek support. Document any harassing or threatening messages, emails, or social media interactions, and save them as evidence. Block the individual from contacting you on all platforms and report their behavior to the relevant authorities, such as local law enforcement or online harassment support services. Remember, you are not alone, and there are resources available to help you navigate this difficult situation."
+    - text: "Cyber stalking can have serious consequences for victims, including emotional distress, anxiety, and fear for personal safety. It's essential to prioritize your mental and emotional well-being while dealing with cyber stalking incidents. Reach out to trusted friends, family members, or support groups for emotional support and guidance. Consider seeking professional counseling or therapy to help you cope with the psychological impact of cyber stalking and develop strategies for self-care and resilience."
+
+  utter_cyberstalking_laws:
+    - text: "In India, cyberstalking is considered a criminal offense under the Information Technology Act, 2000. Sections such as 66A, 67, 67A, and 67B deal with various aspects of cyberstalking and online harassment."
+    - text: "Under the IT Act, cyberstalking is punishable with imprisonment and fines. Offenses such as sending offensive messages or transmitting obscene material can lead to legal consequences."
+    - text: "The IT Act provides legal provisions to address cyberstalking and online harassment. Offenders can face penalties such as imprisonment and fines for their actions."
+    - text: "Cyberstalking offenses are dealt with under the Information Technology Act, 2000, which outlines punishments for sending offensive messages and transmitting obscene material online."
+    - text: "Sections 66A, 67, 67A, and 67B of the IT Act specify punishments for cyberstalking offenses, including imprisonment and fines for offenders."
+    - text: "Indian law recognizes cyberstalking as a serious offense under the Information Technology Act, 2000. Legal provisions are in place to address and punish cyberstalkers."
+    - text: "The IT Act, 2000, includes provisions to address cyberstalking, with penalties such as imprisonment and fines for individuals found guilty of such offenses."
+    - text: "Cyberstalking is punishable under the Information Technology Act, 2000, with penalties ranging from fines to imprisonment for offenders."
+    - text: "Under Indian law, cyberstalking offenses are covered by the Information Technology Act, 2000, which outlines punishments for such activities."
+    - text: "The IT Act, 2000, contains provisions to address cyberstalking offenses and impose penalties on individuals found guilty of engaging in such behavior."
+
+  utter_file_complaint_with_police:
+    - text: "To file a complaint for cyberstalking with the police, visit your nearest police station and submit a written complaint detailing the incidents and providing any evidence you have."
+    - text: "You can file a cyberstalking complaint with the police by visiting your local police station and speaking to the cybercrime division or filing an online complaint through the police department's website."
+    - text: "When filing a cyberstalking complaint with the police, make sure to provide as much detail as possible, including dates, times, and descriptions of the incidents, along with any evidence you have."
+    - text: "To report cyberstalking to the police, gather evidence such as screenshots of messages, emails, and social media posts, and then visit your local police station to file a formal complaint."
+    - text: "If you're a victim of cyberstalking, visit your local police station to file a complaint with the cybercrime division. Provide all relevant details and evidence to assist with the investigation."
+    - text: "When filing a cyberstalking complaint with the police, it's essential to document all incidents and provide evidence to support your case. Visit your local police station to initiate the process."
+    - text: "You can file a complaint for cyberstalking with the police by visiting the Cyber Cell of your local police station or contacting them through their official website or helpline."
+    - text: "To report cyberstalking to the police, visit your local Cyber Cell or police station and file a complaint with all relevant details and evidence of the incidents."
+    - text: "When filing a cyberstalking complaint with the police, ensure to provide accurate information and evidence to support your case. Contact your local Cyber Cell for assistance in initiating the process."
+    - text: "To file a cyberstalking complaint with the police, visit your nearest police station and ask to speak with the cybercrime division. Provide all relevant details and evidence to support your complaint."
+
+  utter_keep_evidence:
+    - text: "As a victim of cyberstalking, it's crucial to preserve all evidence, including screenshots of messages, emails, and social media posts, as well as any other relevant documentation."
+    - text: "Keep all evidence of cyberstalking, such as screenshots, emails, and messages, in a safe and secure location. This evidence will be essential for supporting your complaint and legal action."
+    - text: "Preserving evidence is vital in cyberstalking cases. Make sure to save all relevant communications and document any incidents, as this evidence will be crucial for legal proceedings."
+    - text: "When dealing with cyberstalking, document all incidents and gather evidence, including screenshots, emails, and any other communications. This evidence will be necessary for filing a complaint and taking legal action."
+    - text: "Ensure to collect and preserve evidence of cyberstalking, including screenshots, emails, and messages, as soon as possible. This evidence will help substantiate your complaint and support legal action against the perpetrator."
+    - text: "To strengthen your case against a cyberstalker, gather and save all evidence, including screenshots and communications. This evidence will be instrumental in building a strong legal case."
+    - text: "Keep detailed records of all cyberstalking incidents, including dates, times, and descriptions of the events, along with any evidence you have gathered. This documentation will support your complaint and legal proceedings."
+    - text: "When faced with cyberstalking, it's essential to document all incidents and gather evidence, including screenshots and communications, to support your case. Preserve this evidence carefully for use in legal proceedings."
+    - text: "Maintain a record of all cyberstalking incidents, including screenshots, emails, and messages, and store them securely. This evidence will be invaluable for proving your case and seeking legal redress."
+    - text: "To ensure the success of your cyberstalking complaint, collect and preserve all evidence, including screenshots and communications, as soon as possible. This evidence will be crucial for legal action."
+
+  utter_contact_NCW:
+    - text: "You can contact the National Commission for Women (NCW) to report cyberstalking incidents and seek assistance. They provide support and guidance to victims of cyberstalking."
+    - text: "The National Commission for Women (NCW) offers assistance to victims of cyberstalking. You can reach out to them for support, advice, and guidance on how to deal with the situation."
+    - text: "If you're a victim of cyberstalking, consider contacting the National Commission for Women (NCW) for help and support. They can provide resources and assistance in dealing with the issue."
+    - text: "The National Commission for Women (NCW) can assist you if you're experiencing cyberstalking. Reach out to them for support and guidance on how to address the situation."
+    - text: "For victims of cyberstalking, the National Commission for Women (NCW) offers support and assistance. Contact them to report the incident and seek guidance on the next steps."
+    - text: "If you need help dealing with cyberstalking, consider reaching out to the National Commission for Women (NCW) for assistance. They provide support services to victims of such crimes."
+    - text: "You can seek help from the National Commission for Women (NCW) if you're experiencing cyberstalking. They offer support and resources to assist victims in dealing with the situation."
+    - text: "The National Commission for Women (NCW) can provide assistance to victims of cyberstalking. Contact them for support, guidance, and resources to help address the issue."
+    - text: "If you're facing cyberstalking, consider contacting the National Commission for Women (NCW) for assistance. They offer support services to help victims deal with such situations."
+    - text: "For help with cyberstalking incidents, reach out to the National Commission for Women (NCW). They offer support, advice, and resources to assist victims in handling the situation."
+
+  utter_report_to_cybercrime_portal:
+    - text: "To report cyberstalking incidents, you can use the National Cybercrime Reporting Portal. It provides a platform to report online crimes and seek assistance from law enforcement authorities."
+    - text: "Consider reporting cyberstalking incidents through the National Cybercrime Reporting Portal, which offers a convenient way to report online crimes and seek help from authorities."
+    - text: "The National Cybercrime Reporting Portal is an effective platform for reporting cyberstalking incidents. You can submit your complaint online and seek assistance from law enforcement agencies."
+    - text: "If you're a victim of cyberstalking, consider using the National Cybercrime Reporting Portal to report the incident. It provides a streamlined process for reporting online crimes and seeking assistance."
+    - text: "Reporting cyberstalking to the National Cybercrime Reporting Portal can help authorities investigate and take action against offenders. Consider using this platform to report online crimes."
+    - text: "To report cyberstalking incidents, consider using the National Cybercrime Reporting Portal. It offers a user-friendly interface for reporting online crimes and seeking assistance from law enforcement."
+    - text: "The National Cybercrime Reporting Portal provides a convenient way to report cyberstalking incidents and seek assistance from law enforcement agencies. Consider using this platform to report online crimes."
+    - text: "Consider reporting cyberstalking incidents through the National Cybercrime Reporting Portal, which offers a secure and efficient platform for reporting online crimes and seeking assistance from authorities."
+    - text: "If you've experienced cyberstalking, consider reporting the incident through the National Cybercrime Reporting Portal. It offers a straightforward process for reporting online crimes and seeking help."
+    - text: "To report cyberstalking incidents, use the National Cybercrime Reporting Portal, which provides a centralized platform for reporting online crimes and seeking assistance from law enforcement."
+
+  utter_cyberstalking_punishment_section_67:
+    - text: "Under Section 67 of the Information Technology Act, cyberstalkers who send obscene content on electronic media can face imprisonment for up to three years and a fine."
+    - text: "Section 67 of the IT Act punishes cyberstalkers who publish obscene posts on electronic media with imprisonment for up to three years and a fine."
+    - text: "The punishment for cyberstalking under Section 67 of the IT Act includes imprisonment for up to three years and a fine for sending obscene content on electronic media."
+    - text: "Cyberstalkers can be imprisoned for up to three years and fined for sending obscene posts on electronic media, as per Section 67 of the Information Technology Act."
+    - text: "Section 67 of the IT Act imposes imprisonment for up to three years and a fine on cyberstalkers who send obscene content on electronic media."
+    - text: "Cyberstalkers who send obscene content on electronic media can face imprisonment for up to three years and a fine, according to Section 67 of the Information Technology Act."
+    - text: "The punishment for cyberstalking under Section 67 of the IT Act involves imprisonment for up to three years and a fine for publishing obscene posts on electronic media."
+    - text: "Under Section 67 of the Information Technology Act, cyberstalkers can be imprisoned for up to three years and fined for sending obscene content on electronic media."
+    - text: "Section 67 of the IT Act stipulates imprisonment for up to three years and a fine for cyberstalkers who send obscene content on electronic media."
+    - text: "Cyberstalkers can face imprisonment for up to three years and a fine for sending obscene posts on electronic media, as per Section 67 of the Information Technology Act."
+
+  utter_cyberstalking_punishment_section_67A:
+    - text: "Section 67A of the Information Technology Act punishes cyberstalkers who send sexually explicit material on electronic media with imprisonment for up to five years and a fine of up to five lakhs rupees."
+    - text: "Under Section 67A of the IT Act, cyberstalkers can be imprisoned for up to five years and fined up to five lakhs rupees for sending sexually explicit material on electronic media."
+    - text: "The punishment for cyberstalking under Section 67A of the IT Act includes imprisonment for up to five years and a fine of up to five lakhs rupees for sending sexually explicit material on electronic media."
+    - text: "Cyberstalkers who send sexually explicit material on electronic media can face imprisonment for up to five years and a fine of up to five lakhs rupees, as per Section 67A of the Information Technology Act."
+    - text: "Section 67A of the IT Act imposes imprisonment for up to five years and a fine of up to five lakhs rupees on cyberstalkers who send sexually explicit material on electronic media."
+    - text: "Cyberstalkers can be imprisoned for up to five years and fined up to five lakhs rupees for sending sexually explicit material on electronic media, according to Section 67A of the Information Technology Act."
+    - text: "The punishment for cyberstalking under Section 67A of the IT Act involves imprisonment for up to five years and a fine of up to five lakhs rupees for sending sexually explicit material on electronic media."
+    - text: "Under Section 67A of the Information Technology Act, cyberstalkers can face imprisonment for up to five years and a fine of up to five lakhs rupees for sending sexually explicit material on electronic media."
+    - text: "Section 67A of the IT Act stipulates imprisonment for up to five years and a fine of up to five lakhs rupees for cyberstalkers who send sexually explicit material on electronic media."
+    - text: "Cyberstalkers can face imprisonment for up to five years and a fine of up to five lakhs rupees for sending sexually explicit material on electronic media, as per Section 67A of the Information Technology Act."
+
+  utter_ipc_section_379:
+    - text: "Section 379 IPC covers theft of computer hardware, such as laptops, mobile phones, and other electronic devices. Perpetrators can face up to 3 years imprisonment or a fine, or both."
+    - text: "Stealing computer hardware, including laptops and mobile phones, falls under Section 379 IPC. Offenders may be sentenced to up to 3 years imprisonment or a fine, or both."
+    - text: "If someone steals your computer equipment or mobile phone, it is considered an offense under Section 379 IPC. They could face up to 3 years imprisonment, a fine, or both."
+    - text: "Under Section 379 IPC, stealing computer hardware or mobile phones is punishable by up to 3 years imprisonment or a fine, or both."
+    - text: "Theft of computer hardware, such as laptops or mobile phones, is covered by Section 379 IPC. Offenders may be liable for up to 3 years imprisonment or a fine, or both."
+    - text: "If someone steals your computer hardware or mobile phone, they may be prosecuted under Section 379 IPC, which carries a penalty of up to 3 years imprisonment or a fine, or both."
+    - text: "Section 379 IPC addresses the theft of computer hardware, including laptops and mobile phones. Offenders may face up to 3 years imprisonment or a fine, or both."
+    - text: "Stealing computer hardware, such as laptops or mobile phones, is considered an offense under Section 379 IPC. Perpetrators could be sentenced to up to 3 years imprisonment or a fine, or both."
+    - text: "Under Section 379 IPC, theft of computer hardware is punishable by up to 3 years imprisonment or a fine, or both."
+    - text: "If someone steals your mobile phone or laptop, they may be charged under Section 379 IPC, which carries penalties of up to 3 years imprisonment or a fine, or both."
+
+  utter_ipc_section_411:
+    - text: "Receiving stolen computer equipment, mobile phones, or data is an offense under Section 411 IPC. Offenders may face up to 3 years imprisonment or a fine, or both."
+    - text: "If you are found in possession of stolen computer equipment or mobile phones, you may be charged under Section 411 IPC, which carries penalties of up to 3 years imprisonment or a fine, or both."
+    - text: "Under Section 411 IPC, receiving stolen computer equipment, mobile phones, or data is punishable by up to 3 years imprisonment or a fine, or both."
+    - text: "Section 411 IPC deals with the offense of receiving stolen computer equipment, mobile phones, or data. Offenders may be liable for up to 3 years imprisonment or a fine, or both."
+    - text: "If someone is found with stolen computer equipment or mobile phones, they may be prosecuted under Section 411 IPC, which carries penalties of up to 3 years imprisonment or a fine, or both."
+    - text: "Possessing stolen computer equipment or mobile phones is considered a crime under Section 411 IPC. Offenders may face up to 3 years imprisonment or a fine, or both."
+    - text: "Section 411 IPC addresses the offense of receiving stolen computer equipment, mobile phones, or data. Perpetrators could be sentenced to up to 3 years imprisonment or a fine, or both."
+    - text: "If someone receives stolen computer equipment or mobile phones, they may be charged under Section 411 IPC, which carries penalties of up to 3 years imprisonment or a fine, or both."
+    - text: "Receiving stolen computer equipment, mobile phones, or data is punishable under Section 411 IPC by up to 3 years imprisonment or a fine, or both."
+    - text: "Section 411 IPC covers the offense of receiving stolen computer equipment, mobile phones, or data. Offenders may be liable for up to 3 years imprisonment or a fine, or both."
+
+  utter_ipc_section_419:
+    - text: "Sending phishing emails or engaging in email abuse is a crime under Section 419 IPC. Offenders may face up to 3 years imprisonment or a fine, or both."
+    - text: "Section 419 IPC deals with offenses such as sending phishing emails or engaging in email abuse. Perpetrators could be sentenced to up to 3 years imprisonment or a fine, or both."
+    - text: "If someone sends phishing emails or engages in email abuse, they may be charged under Section 419 IPC, which carries penalties of up to 3 years imprisonment or a fine, or both."
+    - text: "Under Section 419 IPC, sending phishing emails or engaging in email abuse is punishable by up to 3 years imprisonment or a fine, or both."
+    - text: "Sending phishing emails or engaging in email abuse is considered an offense under Section 419 IPC. Offenders may face up to 3 years imprisonment or a fine, or both."
+    - text: "Section 419 IPC addresses the offense of sending phishing emails or engaging in email abuse. Perpetrators could be sentenced to up to 3 years imprisonment or a fine, or both."
+    - text: "If someone sends phishing emails or engages in email abuse, they may be prosecuted under Section 419 IPC, which carries penalties of up to 3 years imprisonment or a fine, or both."
+    - text: "Sending phishing emails or engaging in email abuse is punishable under Section 419 IPC by up to 3 years imprisonment or a fine, or both."
+    - text: "Section 419 IPC covers the offense of sending phishing emails or engaging in email abuse. Offenders may be liable for up to 3 years imprisonment or a fine, or both."
+    - text: "If someone sends phishing emails or engages in email abuse, they may be charged under Section 419 IPC, which carries penalties of up to 3 years imprisonment or a fine, or both."
+
+  utter_ipc_section_420:
+    - text: "Bogus websites, cyber frauds, and sending defamatory messages by email are covered by Section 420 IPC. Offenders may face up to 7 years imprisonment and a fine."
+    - text: "Section 420 IPC deals with offenses such as bogus websites, cyber frauds, and sending defamatory messages by email. Perpetrators could be sentenced to up to 7 years imprisonment and a fine."
+    - text: "If someone engages in cyber frauds, creates bogus websites, or sends defamatory messages by email, they may be charged under Section 420 IPC, which carries penalties of up to 7 years imprisonment and a fine."
+    - text: "Under Section 420 IPC, engaging in cyber frauds, creating bogus websites, or sending defamatory messages by email is punishable by up to 7 years imprisonment and a fine."
+    - text: "Creating bogus websites, engaging in cyber frauds, or sending defamatory messages by email is considered an offense under Section 420 IPC. Offenders may face up to 7 years imprisonment and a fine."
+    - text: "Section 420 IPC addresses offenses such as creating bogus websites, engaging in cyber frauds, or sending defamatory messages by email. Perpetrators could be sentenced to up to 7 years imprisonment and a fine."
+    - text: "If someone creates bogus websites, engages in cyber frauds, or sends defamatory messages by email, they may be prosecuted under Section 420 IPC, which carries penalties of up to 7 years imprisonment and a fine."
+    - text: "Creating bogus websites, engaging in cyber frauds, or sending defamatory messages by email is punishable under Section 420 IPC by up to 7 years imprisonment and a fine."
+    - text: "Section 420 IPC covers offenses such as creating bogus websites, engaging in cyber frauds, or sending defamatory messages by email. Offenders may be liable for up to 7 years imprisonment and a fine."
+    - text: "If someone engages in cyber frauds, creates bogus websites, or sends defamatory messages by email, they may be charged under Section 420 IPC, which carries penalties of up to 7 years imprisonment and a fine."
+
+  utter_ipc_section_465:
+    - text: "Creating false documents, such as fake IDs or forged signatures, is a crime under Section 465 IPC. Offenders may face up to 2 years imprisonment or a fine, or both."
+    - text: "Section 465 IPC deals with offenses such as creating false documents, such as fake IDs or forged signatures. Perpetrators could be sentenced to up to 2 years imprisonment or a fine, or both."
+    - text: "If someone creates false documents, such as fake IDs or forged signatures, they may be charged under Section 465 IPC, which carries penalties of up to 2 years imprisonment or a fine, or both."
+    - text: "Under Section 465 IPC, creating false documents, such as fake IDs or forged signatures, is punishable by up to 2 years imprisonment or a fine, or both."
+    - text: "Creating false documents, such as fake IDs or forged signatures, is considered an offense under Section 465 IPC. Offenders may face up to 2 years imprisonment or a fine, or both."
+    - text: "Section 465 IPC addresses the offense of creating false documents, such as fake IDs or forged signatures. Perpetrators could be sentenced to up to 2 years imprisonment or a fine, or both."
+    - text: "If someone creates false documents, such as fake IDs or forged signatures, they may be prosecuted under Section 465 IPC, which carries penalties of up to 2 years imprisonment or a fine, or both."
+    - text: "Creating false documents, such as fake IDs or forged signatures, is punishable under Section 465 IPC by up to 2 years imprisonment or a fine, or both."
+    - text: "Section 465 IPC covers the offense of creating false documents, such as fake IDs or forged signatures. Offenders may be liable for up to 2 years imprisonment or a fine, or both."
+    - text: "If someone creates false documents, such as fake IDs or forged signatures, they may be charged under Section 465 IPC, which carries penalties of up to 2 years imprisonment or a fine, or both."
+
+  utter_ipc_section_468:
+    - text: "Email spoofing and forgery for cheating are offenses under Section 468 IPC. Offenders may face up to 7 years imprisonment and a fine."
+    - text: "Section 468 IPC deals with offenses such as email spoofing and forgery for cheating. Perpetrators could be sentenced to up to 7 years imprisonment and a fine."
+    - text: "If someone engages in email spoofing or forgery for cheating, they may be charged under Section 468 IPC, which carries penalties of up to 7 years imprisonment and a fine."
+    - text: "Under Section 468 IPC, email spoofing and forgery for cheating are punishable by up to 7 years imprisonment and a fine."
+    - text: "Email spoofing and forgery for cheating are considered offenses under Section 468 IPC. Offenders may face up to 7 years imprisonment and a fine."
+    - text: "Section 468 IPC addresses offenses such as email spoofing and forgery for cheating. Perpetrators could be sentenced to up to 7 years imprisonment and a fine."
+    - text: "If someone engages in email spoofing or forgery for cheating, they may be prosecuted under Section 468 IPC, which carries penalties of up to 7 years imprisonment and a fine."
+    - text: "Email spoofing and forgery for cheating are punishable under Section 468 IPC by up to 7 years imprisonment and a fine."
+    - text: "Section 468 IPC covers offenses such as email spoofing and forgery for cheating. Offenders may be liable for up to 7 years imprisonment and a fine."
+    - text: "If someone engages in email spoofing or forgery for cheating, they may be charged under Section 468 IPC, which carries penalties of up to 7 years imprisonment and a fine."
+
+  utter_ipc_section_500:
+    - text: "Sending offensive messages through communication services or email abuse can result in up to 2 years imprisonment or a fine, or both, under Section 500 IPC."
+    - text: "Section 500 IPC covers offenses such as sending offensive messages through communication services or engaging in email abuse. Offenders may face up to 2 years imprisonment or a fine, or both."
+    - text: "If someone sends offensive messages through communication services or engages in email abuse, they may be charged under Section 500 IPC, which carries penalties of up to 2 years imprisonment or a fine, or both."
+    - text: "Under Section 500 IPC, sending offensive messages through communication services or engaging in email abuse is punishable by up to 2 years imprisonment or a fine, or both."
+    - text: "Sending offensive messages through communication services or engaging in email abuse is considered an offense under Section 500 IPC. Offenders may face up to 2 years imprisonment or a fine, or both."
+    - text: "Section 500 IPC addresses offenses such as sending offensive messages through communication services or engaging in email abuse. Perpetrators could be sentenced to up to 2 years imprisonment or a fine, or both."
+    - text: "If someone sends offensive messages through communication services or engages in email abuse, they may be prosecuted under Section 500 IPC, which carries penalties of up to 2 years imprisonment or a fine, or both."
+    - text: "Sending offensive messages through communication services or engaging in email abuse is punishable under Section 500 IPC by up to 2 years imprisonment or a fine, or both."
+    - text: "Section 500 IPC covers offenses such as sending offensive messages through communication services or engaging in email abuse. Offenders may be liable for up to 2 years imprisonment or a fine, or both."
+    - text: "If someone sends offensive messages through communication services or engages in email abuse, they may be charged under Section 500 IPC, which carries penalties of up to 2 years imprisonment or a fine, or both."
+
+  utter_ipc_section_504:
+    - text: "Acts intended to insult the modesty of a woman are covered by Section 504 IPC. Offenders may face up to 1 year imprisonment or a fine, or both."
+    - text: "Section 504 IPC deals with acts intended to insult the modesty of a woman. Perpetrators could be sentenced to up to 1 year imprisonment or a fine, or both."
+    - text: "If someone engages in acts intended to insult the modesty of a woman, they may be charged under Section 504 IPC, which carries penalties of up to 1 year imprisonment or a fine, or both."
+    - text: "Under Section 504 IPC, acts intended to insult the modesty of a woman are punishable by up to 1 year imprisonment or a fine, or both."
+    - text: "Acts intended to insult the modesty of a woman are considered offenses under Section 504 IPC. Offenders may face up to 1 year imprisonment or a fine, or both."
+    - text: "Section 504 IPC addresses acts intended to insult the modesty of a woman. Perpetrators could be sentenced to up to 1 year imprisonment or a fine, or both."
+    - text: "If someone engages in acts intended to insult the modesty of a woman, they may be prosecuted under Section 504 IPC, which carries penalties of up to 1 year imprisonment or a fine, or both."
+    - text: "Acts intended to insult the modesty of a woman are punishable under Section 504 IPC by up to 1 year imprisonment or a fine, or both."
+    - text: "Section 504 IPC covers offenses such as acts intended to insult the modesty of a woman. Offenders may be liable for up to 1 year imprisonment or a fine, or both."
+    - text: "If someone engages in acts intended to insult the modesty of a woman, they may be charged under Section 504 IPC, which carries penalties of up to 1 year imprisonment or a fine, or both."
+
+  utter_ipc_section_506:
+    - text: "Section 506 IPC deals with criminal intimidation. Offenders may face up to 2 years imprisonment or a fine, or both, and up to 7 years if the threat is severe."
+    - text: "If someone engages in criminal intimidation, they may be charged under Section 506 IPC, which carries penalties of up to 2 years imprisonment or a fine, or both, and up to 7 years if the threat is severe."
+    - text: "Under Section 506 IPC, criminal intimidation is punishable by up to 2 years imprisonment or a fine, or both, and up to 7 years if the threat is severe."
+    - text: "Criminal intimidation is considered an offense under Section 506 IPC. Offenders may face up to 2 years imprisonment or a fine, or both, and up to 7 years if the threat is severe."
+    - text: "Section 506 IPC addresses criminal intimidation. Perpetrators could be sentenced to up to 2 years imprisonment or a fine, or both, and up to 7 years if the threat is severe."
+    - text: "If someone engages in criminal intimidation, they may be prosecuted under Section 506 IPC, which carries penalties of up to 2 years imprisonment or a fine, or both, and up to 7 years if the threat is severe."
+    - text: "Criminal intimidation is punishable under Section 506 IPC by up to 2 years imprisonment or a fine, or both, and up to 7 years if the threat is severe."
+    - text: "Section 506 IPC covers offenses such as criminal intimidation. Offenders may be liable for up to 2 years imprisonment or a fine, or both, and up to 7 years if the threat is severe."
+    - text: "If someone engages in criminal intimidation, they may be charged under Section 506 IPC, which carries penalties of up to 2 years imprisonment or a fine, or both, and up to 7 years if the threat is severe."
+    - text: "Under Section 506 IPC, criminal intimidation is punishable by up to 2 years imprisonment or a fine, or both, and up to 7 years if the threat is severe."
+
+  utter_ipc_section_507:
+    - text: "Criminal intimidation by anonymous communication is punishable under Section 507 IPC, which may result in up to 2 years imprisonment, along with punishment under Section 506 IPC."
+    - text: "If someone engages in criminal intimidation by anonymous communication, they may be charged under Section 507 IPC, which carries penalties of up to 2 years imprisonment, along with punishment under Section 506 IPC."
+    - text: "Under Section 507 IPC, criminal intimidation by anonymous communication is punishable by up to 2 years imprisonment, along with punishment under Section 506 IPC."
+    - text: "Criminal intimidation by anonymous communication is considered an offense under Section 507 IPC. Offenders may face up to 2 years imprisonment, along with punishment under Section 506 IPC."
+    - text: "Section 507 IPC addresses criminal intimidation by anonymous communication. Perpetrators could be sentenced to up to 2 years imprisonment, along with punishment under Section 506 IPC."
+    - text: "If someone engages in criminal intimidation by anonymous communication, they may be prosecuted under Section 507 IPC, which carries penalties of up to 2 years imprisonment, along with punishment under Section 506 IPC."
+    - text: "Criminal intimidation by anonymous communication is punishable under Section 507 IPC by up to 2 years imprisonment, along with punishment under Section 506 IPC."
+    - text: "Section 507 IPC covers offenses such as criminal intimidation by anonymous communication. Offenders may be liable for up to 2 years imprisonment, along with punishment under Section 506 IPC."
+    - text: "If someone engages in criminal intimidation by anonymous communication, they may be charged under Section 507 IPC, which carries penalties of up to 2 years imprisonment, along with punishment under Section 506 IPC."
+    - text: "Under Section 507 IPC, criminal intimidation by anonymous communication is punishable by up to 2 years imprisonment, along with punishment under Section 506 IPC."
+
+  utter_ipc_section_508:
+    - text: "Copyright infringement is punishable under Section 508 IPC. Offenders may face legal action, including fines and imprisonment, for using copyrighted material without permission."
+    - text: "If someone engages in copyright infringement, they may be charged under Section 508 IPC, which carries penalties of fines and imprisonment for using copyrighted material without permission."
+    - text: "Under Section 508 IPC, copyright infringement is punishable by legal action, including fines and imprisonment, for using copyrighted material without permission."
+    - text: "Copyright infringement is considered an offense under Section 508 IPC. Offenders may face legal action, including fines and imprisonment, for using copyrighted material without permission."
+    - text: "Section 508 IPC addresses copyright infringement. Perpetrators could be subjected to legal action, including fines and imprisonment, for using copyrighted material without permission."
+    - text: "If someone engages in copyright infringement, they may be prosecuted under Section 508 IPC, which carries penalties of fines and imprisonment for using copyrighted material without permission."
+    - text: "Copyright infringement is punishable under Section 508 IPC by legal action, including fines and imprisonment, for using copyrighted material without permission."
+    - text: "Section 508 IPC covers offenses such as copyright infringement. Offenders may be subjected to legal action, including fines and imprisonment, for using copyrighted material without permission."
+    - text: "If someone engages in copyright infringement, they may be charged under Section 508 IPC, which carries penalties of fines and imprisonment for using copyrighted material without permission."
+    - text: "Under Section 508 IPC, copyright infringement is punishable by legal action, including fines and imprisonment, for using copyrighted material without permission."
+  utter_report_cyber_crime:
+  - text: "To report cyber-crimes, you have several options:
+      1. Report to your local police station that has jurisdiction over your residence or office premises.
+      2. In cities with a Cyber Police Station established, you can report cyber-crimes there as they generally have jurisdiction over the entire city (verify before filing).
+      3. Mega cities may have online portals for registering cyber-crime complaints. At the national level, you can use https://cybercrime.gov.in/.
+      4. Districts and Mofussil areas without cyber police stations may have a Cyber Cell to register complaints.
+      5. In the absence of a cyber police station or cell, approach a high-ranking police officer in your district or city (Superintendent of Police or Deputy Commissioner of Police) for guidance on registering cyber-crime complaints.
+      6. Each state, city, and district may have different mechanisms for registering cyber-crime complaints. Verify with appropriate authorities."
+ 
+  utter_posh_act_explanation:
+   - text: "The Sexual Harassment of Women at Workplace Act, commonly known as the POSH Act, aims to prevent and address instances of sexual harassment in the workplace. It provides a legal framework for employers to create a safe and respectful work environment for women employees."
+   - text: "The POSH Act, or the Sexual Harassment of Women at Workplace Act, is legislation designed to protect women from sexual harassment at work. It mandates employers to establish Internal Complaints Committees (ICCs) and take measures to prevent and address workplace harassment."
+   - text: "The POSH Act, enacted in 2013, addresses sexual harassment against women in the workplace. It mandates organizations to establish ICCs, conduct awareness programs, and implement policies to prevent sexual harassment and ensure a conducive work environment."
+   - text: "The POSH Act is a legal framework that aims to prevent sexual harassment at the workplace and provide mechanisms for redressal. It requires employers to take proactive measures to prevent harassment and establish ICCs to address complaints effectively."
+   - text: "Under the POSH Act, employers are obligated to provide a safe working environment free from sexual harassment. The act requires the establishment of ICCs to receive and address complaints of sexual harassment and ensure timely and fair resolution."
+   - text: "The POSH Act is legislation aimed at preventing and addressing sexual harassment of women at the workplace. It mandates employers to implement policies, conduct awareness programs, and establish ICCs to address complaints in a fair and timely manner."
+   - text: "The POSH Act is a crucial legislation that addresses sexual harassment in the workplace. It requires employers to take proactive steps to prevent harassment, establish ICCs, and ensure a conducive work environment for women employees."
+   - text: "The Sexual Harassment of Women at Workplace Act, commonly referred to as the POSH Act, is a legal framework aimed at preventing and addressing sexual harassment at work. It mandates employers to establish ICCs and take measures to create a safe workplace."
+   - text: "The POSH Act is a comprehensive legislation enacted to prevent and address sexual harassment of women at the workplace. It places obligations on employers to establish ICCs, conduct awareness programs, and take measures to prevent harassment."
+   - text: "The POSH Act is an important legislation that addresses sexual harassment at the workplace. It requires employers to create a safe work environment, establish ICCs, and ensure timely resolution of complaints to prevent harassment."
+
+  utter_posh_act_compliance:
+   - text: "To comply with the POSH Act, employers must establish Internal Complaints Committees (ICCs), conduct awareness programs, provide training, and implement policies to prevent sexual harassment. Compliance is essential to create a safe workplace for women employees."
+   - text: "Compliance with the POSH Act requires employers to establish ICCs, develop anti-harassment policies, conduct awareness programs, and ensure prompt resolution of complaints. It is crucial for organizations to create a work culture that promotes respect and equality."
+   - text: "To comply with the POSH Act, organizations must establish ICCs, implement anti-sexual harassment policies, conduct regular training sessions, and create a supportive work environment. Compliance ensures the protection of women employees from workplace harassment."
+   - text: "The POSH Act mandates employers to comply with certain provisions to prevent sexual harassment at the workplace. This includes establishing ICCs, implementing anti-harassment policies, conducting training, and fostering a culture of respect and equality."
+   - text: "Compliance with the POSH Act is essential for organizations to create a safe work environment for women employees. This involves establishing ICCs, implementing anti-sexual harassment policies, conducting regular training, and ensuring prompt redressal of complaints."
+   - text: "To comply with the POSH Act, employers must take proactive measures to prevent sexual harassment in the workplace. This includes establishing ICCs, implementing anti-harassment policies, conducting awareness programs, and fostering a supportive work culture."
+   - text: "The POSH Act requires employers to comply with certain obligations to prevent and address sexual harassment at work. This includes establishing ICCs, implementing anti-harassment policies, conducting training, and ensuring prompt action on complaints."
+   - text: "Compliance with the POSH Act is crucial for organizations to create a respectful work environment. This involves establishing ICCs, developing anti-harassment policies, conducting training sessions, and fostering a culture of zero tolerance towards harassment."
+   - text: "To comply with the POSH Act, employers must establish ICCs, develop anti-harassment policies, conduct training, and ensure a supportive work environment. Compliance with the act is essential to protect the rights and dignity of women employees."
+   - text: "The POSH Act mandates employers to comply with specific requirements to prevent sexual harassment in the workplace. This includes establishing ICCs, implementing anti-harassment policies, conducting regular training, and promoting a culture of respect and equality."
+
+  utter_posh_act_reporting:
+   - text: "To report sexual harassment under the POSH Act, individuals should follow the procedure outlined by their organization, which typically involves filing a complaint with the Internal Complaints Committee (ICC) or the designated authority. It is important to provide details of the incident and any supporting evidence."
+   - text: "Reporting sexual harassment under the POSH Act involves following the procedure established by the organization, which usually includes filing a complaint with the ICC or the designated authority. Providing detailed information and evidence is crucial for a thorough investigation."
+   - text: "Individuals can report sexual harassment under the POSH Act by filing a complaint with the ICC or the designated authority in their organization. It is important to provide factual information and any supporting evidence to facilitate a fair and impartial investigation."
+   - text: "To report sexual harassment at the workplace, individuals should file a complaint with the Internal Complaints Committee (ICC) established under the POSH Act. Providing detailed information and evidence is essential for the committee to conduct a thorough investigation."
+   - text: "Under the POSH Act, individuals can report instances of sexual harassment by filing a complaint with the Internal Complaints Committee (ICC) or the designated authority in their organization. It is important to provide accurate information and any evidence to support the complaint."
+   - text: "Reporting sexual harassment under the POSH Act involves filing a complaint with the Internal Complaints Committee (ICC) established by the organization. It is crucial to provide factual information and any evidence to ensure a fair and unbiased investigation."
+   - text: "To report sexual harassment under the POSH Act, individuals should file a complaint with the Internal Complaints Committee (ICC) or the designated authority in their organization. Providing detailed information and evidence is essential for a thorough investigation and appropriate action."
+   - text: "Individuals can report sexual harassment at the workplace by filing a complaint with the Internal Complaints Committee (ICC) established under the POSH Act. It is important to provide accurate information and any evidence to facilitate an effective investigation."
+   - text: "To report sexual harassment under the POSH Act, individuals should follow the procedure established by their organization, which typically involves filing a complaint with the Internal Complaints Committee (ICC). Providing detailed information and evidence is crucial for a fair and impartial investigation."
+   - text: "Reporting sexual harassment under the POSH Act requires individuals to file a complaint with the Internal Complaints Committee (ICC) or the designated authority in their organization. It is important to provide factual information and any supporting evidence to ensure a thorough investigation."
+
+  utter_posh_act_penalties:
+   - text: "Non-compliance with the POSH Act can result in penalties such as fines, cancellation of licenses, or legal action against the employer. It is crucial for organizations to adhere to the provisions of the act to avoid legal repercussions and ensure a safe workplace for women employees."
+   - text: "Violating the POSH Act can lead to severe penalties, including fines and legal action against the organization. It is imperative for employers to comply with the provisions of the act to create a safe and respectful work environment for women employees."
+   - text: "Non-compliance with the POSH Act may result in penalties such as fines and legal sanctions against the employer. It is essential for organizations to take proactive measures to prevent sexual harassment and ensure compliance with the act."
+   - text: "The POSH Act imposes penalties on employers for non-compliance, which may include fines, cancellation of licenses, or other legal action. It is important for organizations to implement measures to prevent sexual harassment and comply with the act's provisions."
+   - text: "Violating the POSH Act can have serious consequences, including fines and legal liabilities for the organization. It is essential for employers to create a culture of respect and equality and ensure compliance with the act to protect the rights of women employees."
+   - text: "Non-compliance with the POSH Act may lead to penalties such as fines and legal proceedings against the employer. It is imperative for organizations to establish ICCs, implement anti-harassment policies, and ensure compliance with the act to prevent sexual harassment at the workplace."
+   - text: "The POSH Act imposes penalties on employers for failing to comply with its provisions, which may include fines and legal action. It is crucial for organizations to establish ICCs, conduct awareness programs, and ensure prompt redressal of complaints to prevent sexual harassment."
+   - text: "Violating the POSH Act can result in severe penalties, including fines and legal repercussions for the organization. It is essential for employers to establish ICCs, develop anti-harassment policies, and create a safe work environment to comply with the act and protect women employees."
+   - text: "Non-compliance with the POSH Act may lead to penalties such as fines and legal action against the employer. It is crucial for organizations to establish ICCs, conduct training sessions, and foster a culture of zero tolerance towards sexual harassment to ensure compliance with the act."
+   - text: "Violating the POSH Act can have serious implications for employers, including fines and legal consequences. It is imperative for organizations to establish ICCs, implement anti-harassment policies, and take proactive measures to prevent sexual harassment and comply with the act."
+
+  utter_posh_act_icc:
+   - text: "The Internal Complaints Committee (ICC) is responsible for addressing sexual harassment complaints under the POSH Act. It is mandated by law and consists of members who are trained to handle such cases impartially and sensitively."
+   - text: "The Internal Complaints Committee (ICC) established under the POSH Act plays a crucial role in addressing sexual harassment complaints at the workplace. It conducts inquiries, investigates complaints, and recommends appropriate action against offenders."
+   - text: "The Internal Complaints Committee (ICC) is tasked with receiving and addressing complaints of sexual harassment under the POSH Act. It ensures fair and impartial inquiry, protection of complainants, and timely resolution of complaints."
+   - text: "Under the POSH Act, the Internal Complaints Committee (ICC) is responsible for receiving and redressing complaints of sexual harassment at the workplace. It consists of internal and external members and conducts inquiries in a fair and transparent manner."
+   - text: "The Internal Complaints Committee (ICC) mandated by the POSH Act is responsible for investigating complaints of sexual harassment at the workplace. It ensures confidentiality, conducts fair hearings, and recommends appropriate action based on the findings."
+   - text: "The Internal Complaints Committee (ICC) established under the POSH Act is entrusted with the task of addressing complaints of sexual harassment at the workplace. It follows a structured process to investigate complaints and takes measures to prevent recurrence."
+   - text: "The Internal Complaints Committee (ICC) under the POSH Act is responsible for receiving and investigating complaints of sexual harassment at the workplace. It conducts inquiries in a fair and transparent manner and ensures compliance with the provisions of the act."
+   - text: "The Internal Complaints Committee (ICC) established by organizations under the POSH Act is responsible for addressing complaints of sexual harassment at the workplace. It comprises trained members who ensure impartial inquiry and prompt redressal of complaints."
+   - text: "The Internal Complaints Committee (ICC) mandated by the POSH Act is responsible for addressing complaints of sexual harassment at the workplace. It follows due process, conducts fair inquiries, and recommends appropriate action to prevent recurrence."
+   - text: "The Internal Complaints Committee (ICC) established under the POSH Act is responsible for addressing complaints of sexual harassment at the workplace. It ensures confidentiality, conducts thorough investigations, and takes measures to prevent retaliation against complainants."
+
+ 
+actions:
+  - utter_report_cyber_crime
+  - utter_greet
+  - utter_bye
+  - utter_ask_about_rights
+  - utter_iamabot
+  - action_provide_rights_details
+  - action_direct_to_links
+  - action_provide_safety_apps_for_women_india
+  - utter_ola_safety_features
+  - action_provide_safety_numbers
+  - utter_ola_safety_measures_female_passengers
+  - utter_mobile_recharge_precautions
+  - utter_cyber_stalking_precautions
+  - utter_cyberstalking_laws
+  - utter_file_complaint_with_police
+  - utter_keep_evidence
+  - utter_contact_NCW
+  - utter_report_to_cybercrime_portal
+  - utter_cyberstalking_punishment_section_67
+  - utter_cyberstalking_punishment_section_67A
+  - utter_ipc_section_379
+  - utter_ipc_section_411
+  - utter_ipc_section_419
+  - utter_ipc_section_420
+  - utter_ipc_section_465
+  - utter_ipc_section_468
+  - utter_ipc_section_500
+  - utter_ipc_section_504
+  - utter_ipc_section_506
+  - utter_ipc_section_507
+  - utter_ipc_section_508  
+  - utter_posh_act_explanation
+  - utter_posh_act_compliance
+  - utter_posh_act_reporting
+  - utter_posh_act_penalties
+  - utter_posh_act_icc
+  - action_report_cyberstalking
+ 
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

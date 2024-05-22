@@ -1,0 +1,217 @@
+version: "3.1"
+
+stories:
+  - story: User greets and asks about rights
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: ask_about_rights
+      - action: action_provide_rights_details
+
+  - story: User asks for rights details
+    steps:
+      - intent: ask_about_rights
+      - action: action_provide_rights_details
+
+  - story: User ends conversation after asking about rights
+    steps:
+      - intent: ask_about_rights
+      - action: action_provide_rights_details
+      - intent: bye
+      - action: utter_bye  
+
+  - story: User asks about rights and challenges bot
+    steps:
+      - intent: ask_about_rights
+      - action: action_provide_rights_details
+      - intent: bot_challenge
+      - action: utter_iamabot
+
+  - story: User greets and ends conversation
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: bye
+      - action: utter_bye
+
+  - story: User greets and asks for helpful links
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: ask_direct_to_links
+      - action: action_direct_to_links
+
+  - story: User asks for helpful links
+    steps:
+      - intent: ask_direct_to_links
+      - action: action_direct_to_links
+
+  - story: User ends conversation after asking for links
+    steps:
+      - intent: ask_direct_to_links
+      - action: action_direct_to_links
+      - intent: bye
+      - action: utter_bye
+
+  - story: Provide safety apps for women in India
+    steps:
+      - intent: provide_safety_apps_for_women_india
+      - action: action_provide_safety_apps_for_women_india
+
+  - story: Ask about safety features in Ola
+    steps:
+      - intent: ask_about_ola_safety_features
+      - action: utter_ola_safety_features
+
+  - story: Ask about safety measures for female passengers in Ola
+    steps:
+      - intent: ask_about_ola_safety_measures_female_passengers
+      - action: utter_ola_safety_measures_female_passengers
+
+  - story: User asks about mobile recharge precautions
+    steps:
+     - intent: mobile_recharge
+     - action: utter_mobile_recharge_precautions
+
+  - story: User asks about cyber stalking precautions
+    steps:
+     - intent: cyber_stalking_precautions
+     - action: utter_cyber_stalking_precautions
+
+
+
+  - story: Filing Complaint with Police
+    steps:
+     - intent: file_complaint_with_police
+     - action: utter_file_complaint_with_police
+
+  - story: Keeping Evidence
+    steps:
+     - intent: keep_evidence
+     - action: utter_keep_evidence
+
+  - story: Contacting NCW
+    steps:
+     - intent: contact_NCW
+     - action: utter_contact_NCW
+
+  - story: Reporting to Cybercrime Portal
+    steps:
+     - intent: report_to_cybercrime_portal
+     - action: utter_report_to_cybercrime_portal
+
+
+  - story: User Inquires About Cyberstalking Punishment under Section 67
+    steps:
+     - intent: cyberstalking_punishment_section_67
+     - action: utter_cyberstalking_punishment_section_67
+
+  - story: User Asks About Cyberstalking Punishment under Section 67A
+    steps:
+      - intent: cyberstalking_punishment_section_67A
+      - action: utter_cyberstalking_punishment_section_67A
+
+  - story: Theft of computer hardware
+    steps:
+     - intent: ipc_section_379
+     - action: utter_ipc_section_379
+
+  - story: Receiving stolen computer equipment
+    steps:
+     - intent: ipc_section_411
+     - action: utter_ipc_section_411
+
+  - story: Sending phishing emails
+    steps:
+     - intent: ipc_section_419
+     - action: utter_ipc_section_419
+
+  - story: Bogus websites and cyber frauds
+    steps:
+     - intent: ipc_section_420
+     - action: utter_ipc_section_420
+
+  - story: Creating false documents
+    steps:
+     - intent: ipc_section_465
+     - action: utter_ipc_section_465
+
+  - story: Forgery for cheating
+    steps:
+     - intent: ipc_section_468
+     - action: utter_ipc_section_468
+
+  - story: Sending offensive messages
+    steps:
+     - intent: ipc_section_500
+     - action: utter_ipc_section_500
+
+  - story: Acts intended to insult the modesty of a woman
+    steps:
+     - intent: ipc_section_504
+     - action: utter_ipc_section_504
+
+  - story: Criminal intimidation
+    steps:
+     - intent: ipc_section_506
+     - action: utter_ipc_section_506
+
+  - story: Criminal intimidation by anonymous communication
+    steps:
+     - intent: ipc_section_507
+     - action: utter_ipc_section_507
+
+  - story: Copyright infringement
+    steps:
+     - intent: ipc_section_508
+     - action: utter_ipc_section_508
+
+  - story: Report cyber-crime
+    steps:
+     - intent: report_cyber_crime
+     - action: utter_report_cyber_crime
+
+  - story: User asks for an explanation of the POSH Act
+    steps:
+     - intent: posh_act_explanation
+     - action: utter_posh_act_explanation
+
+  - story: User inquires about compliance with the POSH Act
+    steps:
+     - intent: posh_act_compliance
+     - action: utter_posh_act_compliance
+
+  - story: User wants to know how to report under the POSH Act
+    steps:
+     - intent: posh_act_reporting
+     - action: utter_posh_act_reporting
+
+  - story: User asks about penalties for non-compliance with the POSH Act
+    steps:
+      - intent: posh_act_penalties
+      - action: utter_posh_act_penalties
+
+  - story: User seeks information about the role of the Internal Complaints Committee (ICC)
+    steps:
+     - intent: posh_act_icc
+     - action: utter_posh_act_icc
+     
+
+  - story: User greets and asks for safety numbers
+    steps:
+     - intent: greet
+     - action: utter_greet
+     - intent: ask_safety_numbers
+     - action: action_provide_safety_numbers
+
+  - story: User reports cyberstalking
+    steps:
+     - intent: report_cyberstalking
+     - action: action_report_cyberstalking
+
+  - story: User reports cyberstalking and asks about laws
+    steps:
+       - intent: report_cyberstalking
+       - action: action_report_cyberstalking
+       - intent: laws_related_to_cyberstalking
+       - action: utter_cyberstalking_laws
