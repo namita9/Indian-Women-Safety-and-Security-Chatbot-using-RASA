@@ -1,5 +1,8 @@
 # Features
-
+ - Women at the Workplace
+ - Cybercrime
+ - Eve Teasing
+ - Safe Travel
 # Technologies Used
 Rasa: For natural language processing and dialogue management.
 Flask: For developing the web interface.
