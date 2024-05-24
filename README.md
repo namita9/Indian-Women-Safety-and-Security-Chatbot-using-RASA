@@ -11,7 +11,7 @@ Pyttsx3: For speech recognition and text-to-speech functionalities.
     - Python 3.6-3.8
     - pip (Python package installer)
     - Virtual environment tool (optional but recommended)
-    - Rasa framework
+    - Rasa framework 3.1.1
     - Flask
     - SpeechRecognition
     - gtts
