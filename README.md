@@ -46,3 +46,16 @@ Pyttsx3: For speech recognition and text-to-speech functionalities.
 
    # (Optional) Link spaCy model to Rasa
    python -m spacy link en_core_web_md en
+
+   # To train the model
+rasa train
+
+# To start the action server
+rasa run actions
+
+# To start the Rasa server with the user interface
+rasa run -m models --enable-api --cors "*"
+
+# To start the custom app
+python app.py
+
