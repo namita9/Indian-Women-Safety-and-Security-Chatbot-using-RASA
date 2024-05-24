@@ -44,7 +44,7 @@ Pyttsx3: For speech recognition and text-to-speech functionalities.
     python -m spacy link en_core_web_md en
     ```
 
-## Usage
+
 
 ## Usage
 
