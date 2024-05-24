@@ -46,6 +46,8 @@ Pyttsx3: For speech recognition and text-to-speech functionalities.
 
 ## Usage
 
+## Usage
+
 Provide examples and instructions on how to use your project.
 
 ```bash
@@ -55,5 +57,8 @@ rasa train
 # To start the action server
 rasa run actions
 
-# To start the Rasa server
-rasa run
+# To start the Rasa server with the user interface
+rasa run -m models --enable-api --cors "*"
+
+# To start the custom app
+python app.py
