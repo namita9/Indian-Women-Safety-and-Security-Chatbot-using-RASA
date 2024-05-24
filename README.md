@@ -36,7 +36,7 @@ Pyttsx3: For speech recognition and text-to-speech functionalities.
 
 ## Usage
 
-Provide examples and instructions on how to use your project.
+
 
 ```bash
 # To train the model
