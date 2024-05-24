@@ -15,7 +15,7 @@ Pyttsx3: For speech recognition and text-to-speech functionalities.
     - Flask
     - SpeechRecognition
     - gtts
-    - pttys3x
+    - Pttys3x
     - spaCy and its language model (optional for better NLP performance)
 
 2. **Steps**:
