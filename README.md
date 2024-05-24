@@ -5,9 +5,11 @@
 - 🚗 Safe Travel
 
 # Technologies Used
-- 🧠 **Rasa**: Powers natural language processing and dialogue management.
-- 🌐 **Flask**: Utilized for developing the web interface.
-- 🗣️ **Pyttsx3**: Enables speech recognition and text-to-speech functionalities.
+- **Python**: The programming language used for development.
+- **Rasa**: Powers natural language processing and dialogue management.
+- **Flask**: Utilized for developing the web interface.
+- **Pyttsx3**: Enables speech recognition and text-to-speech functionalities.
+
 
 
 ## Installation
