@@ -34,20 +34,12 @@ Pyttsx3: For speech recognition and text-to-speech functionalities.
    python3 -m venv env
    source env/bin/activate  # On Windows use `env\Scripts\activate`
 
-   # Install dependencies
-   pip install -r requirements.txt
+## Usage
 
-   # Install Rasa
-   pip install rasa
+Provide examples and instructions on how to use your project.
 
-   # Install spaCy and its language model (optional)
-   pip install -U spacy
-   python -m spacy download en_core_web_md
-
-   # (Optional) Link spaCy model to Rasa
-   python -m spacy link en_core_web_md en
-
-   # To train the model
+```bash
+# To train the model
 rasa train
 
 # To start the action server
