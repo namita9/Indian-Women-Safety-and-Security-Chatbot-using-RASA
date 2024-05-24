@@ -22,7 +22,7 @@
    - Flask
    - SpeechRecognition
    - gtts
-   - Pttys3x
+   - Pttysx3
    - spaCy and its language model (optional for better NLP performance)
 
 2. **Steps**:
