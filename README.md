@@ -1,8 +1,9 @@
 # Features
- - Women at the Workplace
- - Cybercrime
- - Eve Teasing
- - Safe Travel
+- 💼 Women at the Workplace
+- 🕵️ Cybercrime
+- 👀 Eve Teasing
+- 🚗 Safe Travel
+
 # Technologies Used
 Rasa: For natural language processing and dialogue management.
 Flask: For developing the web interface.
@@ -11,57 +12,37 @@ Pyttsx3: For speech recognition and text-to-speech functionalities.
 ## Installation
 
 1. **Prerequisites**:
-    - Python 3.6-3.8
-    - pip (Python package installer)
-    - Virtual environment tool (optional but recommended)
-    - Rasa framework 3.1.1
-    - Flask
-    - SpeechRecognition
-    - gtts
-    - Pttys3x
-    - spaCy and its language model (optional for better NLP performance)
+   - Python 3.6-3.8
+   - pip (Python package installer)
+   - Virtual environment tool (optional but recommended)
+   - Rasa framework 3.1.1
+   - Flask
+   - SpeechRecognition
+   - gtts
+   - Pttys3x
+   - spaCy and its language model (optional for better NLP performance)
 
 2. **Steps**:
-    ```bash
-    # Clone the repository
-    git clone https://github.com/yourusername/projectname.git
+   ```bash
+   # Clone the repository
+   git clone https://github.com/yourusername/projectname.git
 
-    # Navigate to the project directory
-    cd projectname
+   # Navigate to the project directory
+   cd projectname
 
-    # Create a virtual environment (optional but recommended)
-    python3 -m venv env
-    source env/bin/activate  # On Windows use `env\Scripts\activate`
+   # Create a virtual environment (optional but recommended)
+   python3 -m venv env
+   source env/bin/activate  # On Windows use `env\Scripts\activate`
 
-    # Install dependencies
-    pip install -r requirements.txt
+   # Install dependencies
+   pip install -r requirements.txt
 
-    # Install Rasa
-    pip install rasa
+   # Install Rasa
+   pip install rasa
 
-    # Install spaCy and its language model (optional)
-    pip install -U spacy
-    python -m spacy download en_core_web_md
+   # Install spaCy and its language model (optional)
+   pip install -U spacy
+   python -m spacy download en_core_web_md
 
-    # (Optional) Link spaCy model to Rasa
-    python -m spacy link en_core_web_md en
-    ```
-
-
-
-## Usage
-
-Provide examples and instructions on how to use your project.
-
-```bash
-# To train the model
-rasa train
-
-# To start the action server
-rasa run actions
-
-# To start the Rasa server with the user interface
-rasa run -m models --enable-api --cors "*"
-
-# To start the custom app
-python app.py
+   # (Optional) Link spaCy model to Rasa
+   python -m spacy link en_core_web_md en
